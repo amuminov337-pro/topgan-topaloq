@@ -197,6 +197,10 @@ export default function BuviSahifa() {
       const { javob } = (await sorovNatijasi.json()) as { javob: string };
       setOshkorJavob(javob);
       setOshkorQilingan(true);
+      // Foydalanuvchi topolmay, javobni o'zi so'rab ko'rgan bo'lsa ham,
+      // shu obraz haqidagi madaniy hikoya baribir ko'rsatiladi — bu faqat
+      // to'g'ri topilgandagina emas, har doim o'rgatuvchi bo'lishi kerak.
+      await izohSora(topishmoq.id);
     } catch {
       setXato("Javobni ko'rsatib bo'lmadi. Birozdan keyin qayta urinib ko'ring.");
     } finally {
@@ -297,6 +301,12 @@ export default function BuviSahifa() {
                   {ikonkaEmoji(topishmoq.ikonka)} {oshkorJavob}
                 </span>
               </p>
+              {izohYuklanmoqda && (
+                <p className="mt-2 text-sm font-semibold opacity-70">
+                  🤔 Buvijon bu haqda hikoya qilib bermoqda...
+                </p>
+              )}
+              {izoh && <p className="mt-2 text-sm leading-relaxed">{izoh}</p>}
             </div>
           )}
 
