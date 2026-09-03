@@ -37,12 +37,13 @@
   --color-xato-fon: #fbe3e1;
   --color-xato-matn: #8a2416;
 
-  /* Bosqichma-bosqich maslahat — to'q rangdan oltin oshkoralikka qarab
-     tobora "ochiluvchi" uch bosqich (dizayn istisnosi, ↑ izohga qarang) */
-  --color-maslahat1-fon: #1e2a57;
-  --color-maslahat1-matn: #eef1f8;
-  --color-maslahat2-fon: #4a2f6b;
-  --color-maslahat2-matn: #f3eefa;
+  /* Bosqichma-bosqich maslahat — barchasi tillarang oilasidan, to'q
+     bronzadan boshlanib eng oxirida sof oltinga ("oshkoralik") qarab
+     yorishadi (dizayn istisnosi, ↑ izohga qarang) */
+  --color-maslahat1-fon: #7a4a12;
+  --color-maslahat1-matn: #fbeed7;
+  --color-maslahat2-fon: #c9862f;
+  --color-maslahat2-matn: #3a2400;
   --color-maslahat3-fon: #e0a63e;
   --color-maslahat3-matn: #3a2400;
 

@@ -32,6 +32,14 @@ const MASLAHAT_RANGI: Record<1 | 2 | 3, string> = {
   3: "border-maslahat3-matn/20 bg-maslahat3-fon text-maslahat3-matn",
 };
 
+/** Har maslahat darajasi uchun ikonka — qidirishdan (1) yechim yig'ishga (2),
+ * javobga eng yaqin ("kalit topildi") holatga (3) qarab. */
+const MASLAHAT_IKONKA: Record<1 | 2 | 3, string> = {
+  1: "🔍",
+  2: "🧩",
+  3: "🔑",
+};
+
 export default function BuviSahifa() {
   const [topishmoq, setTopishmoq] = useState<OchiqTopishmoq | null>(null);
   const [yuklanmoqda, setYuklanmoqda] = useState(true);
@@ -180,13 +188,13 @@ export default function BuviSahifa() {
     <Sahifa sarlavha="AI-buvi suhbatlari">
       {yuklanmoqda && (
         <div className="rounded-2xl border border-buvi-matn/10 bg-buvi-fon p-5 text-buvi-matn">
-          <p className="text-sm font-semibold">Buvijon topishmoq o'ylamoqda...</p>
+          <p className="text-sm font-semibold">🤔 Buvijon topishmoq o'ylamoqda...</p>
         </div>
       )}
 
       {!yuklanmoqda && xato && !topishmoq && (
         <div className="rounded-2xl border border-nofaol-matn/15 bg-nofaol-fon p-5 text-nofaol-matn">
-          <p className="text-sm font-semibold">{xato}</p>
+          <p className="text-sm font-semibold">⚠️ {xato}</p>
         </div>
       )}
 
@@ -194,7 +202,7 @@ export default function BuviSahifa() {
         <div className="flex flex-col gap-3">
           <div className="rounded-2xl border border-buvi-matn/10 bg-buvi-fon p-5 text-buvi-matn">
             <p className="text-xs font-bold uppercase tracking-wide opacity-60">
-              Buvijon aytadi
+              👵 Buvijon aytadi
             </p>
             <p className="mt-2 text-lg font-bold leading-snug">{topishmoq.matn}</p>
           </div>
@@ -202,7 +210,7 @@ export default function BuviSahifa() {
           {natija === "notogri" && (
             <div className="rounded-2xl border border-xato-matn/15 bg-xato-fon p-4 text-xato-matn">
               <p className="text-sm font-semibold">
-                Noto'g'ri javob, buvijon sizga qayta o'ylashga yordam beradi.
+                ❌ Noto'g'ri javob, buvijon sizga qayta o'ylashga yordam beradi.
               </p>
             </div>
           )}
@@ -213,7 +221,7 @@ export default function BuviSahifa() {
               className={`rounded-2xl border p-4 ${MASLAHAT_RANGI[m.daraja]}`}
             >
               <p className="text-xs font-bold uppercase tracking-wide opacity-70">
-                {m.daraja}-maslahat
+                {MASLAHAT_IKONKA[m.daraja]} {m.daraja}-maslahat
               </p>
               <p className="mt-1 text-sm font-semibold">{m.matn}</p>
             </div>
@@ -221,7 +229,7 @@ export default function BuviSahifa() {
 
           {maslahatYuklanmoqda && (
             <div className="rounded-2xl border border-nofaol-matn/15 bg-nofaol-fon p-4 text-nofaol-matn">
-              <p className="text-sm font-semibold opacity-70">Buvijon maslahat o'ylamoqda...</p>
+              <p className="text-sm font-semibold opacity-70">🤔 Buvijon maslahat o'ylamoqda...</p>
             </div>
           )}
 
@@ -231,7 +239,7 @@ export default function BuviSahifa() {
             !oshkorQilingan && (
               <div className="rounded-2xl border border-xato-matn/15 bg-xato-fon p-4 text-xato-matn">
                 <p className="text-sm font-semibold">
-                  Urinishlar soni tugadi. Javobni ko'rish uchun pastdagi tugmani bosing yoki
+                  ⏳ Urinishlar soni tugadi. Javobni ko'rish uchun pastdagi tugmani bosing yoki
                   keyingi topishmoqqa o'ting.
                 </p>
               </div>
@@ -239,7 +247,7 @@ export default function BuviSahifa() {
 
           {natija === "togri" && (
             <div className="rounded-2xl border border-natija-matn/10 bg-natija-fon p-4 text-natija-matn">
-              <p className="text-sm font-bold">Barakalla! Javobingiz to'g'ri. 🎉</p>
+              <p className="text-sm font-bold">🎉 Barakalla! Javobingiz to'g'ri.</p>
               {togriJavobMatni && (
                 <p className="mt-1 text-sm font-semibold">
                   To'g'ri javob: {togriJavobMatni} edi.
@@ -251,14 +259,14 @@ export default function BuviSahifa() {
           {oshkorQilingan && oshkorJavob && (
             <div className="rounded-2xl border border-natija-matn/10 bg-natija-fon p-4 text-natija-matn">
               <p className="text-sm font-semibold">
-                Javob: <span className="font-extrabold">{oshkorJavob}</span>
+                👁️ Javob: <span className="font-extrabold">{oshkorJavob}</span>
               </p>
             </div>
           )}
 
           {xato && (
             <div className="rounded-2xl border border-nofaol-matn/15 bg-nofaol-fon p-4 text-nofaol-matn">
-              <p className="text-sm font-semibold">{xato}</p>
+              <p className="text-sm font-semibold">⚠️ {xato}</p>
             </div>
           )}
 
