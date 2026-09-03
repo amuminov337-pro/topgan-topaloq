@@ -2,14 +2,15 @@
 // F4: tasodifiy topishmoq + javob tekshirish.
 // F5: noto'g'ri javobdan keyin 3 bosqichli maslahat (toifa -> xususiyat ->
 //     deyarli oshkora), hech qachon javobni o'z ichiga olmaydi.
+// F6: to'g'ri javobdan keyin javob ikonkasi + 2-3 gaplik madaniy izoh.
 // Shuningdek MASTER_PROMPT 2-bo'limidagi doimiy qoida: har bosqichda
 // "javobni ko'rsat" tugmasi bor va u HECH QACHON bloklanmaydi — foydalanuvchi
 // majburlanmaydi. Urinishlar tugagach faqat javob KIRITISH paneli bloklanadi.
-// Madaniy izoh (F6) hali yo'q — keyingi bosqichda shu sahifaga qo'shiladi.
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
 import Sahifa from "@/components/Sahifa";
+import { ikonkaEmoji } from "@/lib/ikonka";
 
 type OchiqTopishmoq = {
   id: string;
@@ -53,6 +54,8 @@ export default function BuviSahifa() {
   const [maslahatYuklanmoqda, setMaslahatYuklanmoqda] = useState(false);
 
   const [togriJavobMatni, setTogriJavobMatni] = useState<string | null>(null);
+  const [izoh, setIzoh] = useState<string | null>(null);
+  const [izohYuklanmoqda, setIzohYuklanmoqda] = useState(false);
 
   const [oshkorQilingan, setOshkorQilingan] = useState(false);
   const [oshkorJavob, setOshkorJavob] = useState<string | null>(null);
@@ -66,6 +69,7 @@ export default function BuviSahifa() {
     setNotogriSoni(0);
     setMaslahatlar([]);
     setTogriJavobMatni(null);
+    setIzoh(null);
     setOshkorQilingan(false);
     setOshkorJavob(null);
     try {
@@ -126,6 +130,25 @@ export default function BuviSahifa() {
     }
   }
 
+  /** F6 — to'g'ri javobdan keyin bu obraz haqida qisqa madaniy izoh oladi. */
+  async function izohSora(id: string) {
+    setIzohYuklanmoqda(true);
+    try {
+      const sorovNatijasi = await fetch("/api/buvi/izoh", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id }),
+      });
+      if (!sorovNatijasi.ok) throw new Error("server xatosi");
+      const { izoh: izohMatni } = (await sorovNatijasi.json()) as { izoh: string };
+      setIzoh(izohMatni);
+    } catch {
+      // Izoh kelmasa ham muhim emas — tabrik va javob baribir ko'rinadi.
+    } finally {
+      setIzohYuklanmoqda(false);
+    }
+  }
+
   async function javobniYubor(hodisa: React.FormEvent) {
     hodisa.preventDefault();
     if (!topishmoq || !kiritilganJavob.trim() || tekshirilmoqda) return;
@@ -143,7 +166,7 @@ export default function BuviSahifa() {
 
       if (togri) {
         setNatija("togri");
-        await togriJavobniOl(topishmoq.id);
+        await Promise.all([togriJavobniOl(topishmoq.id), izohSora(topishmoq.id)]);
         return;
       }
 
@@ -252,17 +275,27 @@ export default function BuviSahifa() {
             <div className="rounded-2xl border border-natija-matn/10 bg-natija-fon p-4 text-natija-matn">
               <p className="text-sm font-bold">🎉 Barakalla! Javobingiz to'g'ri.</p>
               {togriJavobMatni && (
-                <p className="mt-1 text-sm font-semibold">
-                  To'g'ri javob: {togriJavobMatni} edi.
+                <p className="mt-2 flex items-center gap-2 text-base font-extrabold">
+                  <span className="text-2xl">{ikonkaEmoji(topishmoq.ikonka)}</span>
+                  {togriJavobMatni} edi.
                 </p>
               )}
+              {izohYuklanmoqda && (
+                <p className="mt-2 text-sm font-semibold opacity-70">
+                  🤔 Buvijon bu haqda hikoya qilib bermoqda...
+                </p>
+              )}
+              {izoh && <p className="mt-2 text-sm leading-relaxed">{izoh}</p>}
             </div>
           )}
 
           {oshkorQilingan && oshkorJavob && (
             <div className="rounded-2xl border border-natija-matn/10 bg-natija-fon p-4 text-natija-matn">
               <p className="text-sm font-semibold">
-                👁️ Javob: <span className="font-extrabold">{oshkorJavob}</span>
+                👁️ Javob:{" "}
+                <span className="font-extrabold">
+                  {ikonkaEmoji(topishmoq.ikonka)} {oshkorJavob}
+                </span>
               </p>
             </div>
           )}
