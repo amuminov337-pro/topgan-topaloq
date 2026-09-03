@@ -23,6 +23,8 @@
 
 **Bugfix (2026-09-03, F12):** Vercel build'da 58 ta "Module not found" xatosi chiqdi — sababi `tsconfig.json`, `next.config.ts`, `postcss.config.mjs`, `.gitignore` va uchta komponent fayli (`Logotip.tsx`, `NatijaPanel.tsx`, `Sahifa.tsx`) F1'dan beri hech qachon `git add` qilinmagani (har feature uchun faqat o'sha feature fayllari qo'shilgani sababli asosiy skelet fayllari e'tibordan chetda qolgan). Barcha fayllar qo'shilib, qayta push qilingandan keyin deploy muvaffaqiyatli o'tdi.
 
+**Korpus auditi (2026-09-03):** Foydalanuvchi t133 topishmog'ida ("Kichkina filday...") mantiqsiz o'xshatish payqagach, barcha 170 ta topishmoq asl manba (`M.Abdurahimov (tuzuvchi). O'zbek topishmoqlari.md`) bilan qatordan-qator solishtirildi. Yana 3 ta transliteratsiya xatosi topildi va tuzatildi: **t164** (magnitafon) — "Joni bor" manbada aslida "Jonsiz" (ma'no teskari chiqqan edi); **t043** (sichqon) — "ezinam" (mavjud bo'lmagan so'z) manbada "yeznam" (qaynog'a, shevaviy so'z); **t023** (tish) — "o'ra" manbada "oxurcha" (em-xashak idishi). Qolgan 166 ta yozuv manbaga to'liq mos ekani tasdiqlandi.
+
 **Dizayn eslatmasi (2026-09-03):** Loyiha egasining aniq roziligi bilan,
 faqat dizaynga oid jihatlarda (ranglar) MASTER_PROMPT'ning qat'iy
 palitrasidan chetga chiqishga ruxsat berilgan — bu shaxsiy tashabbus

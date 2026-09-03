@@ -270,7 +270,7 @@
   },
   {
     "id": "t023",
-    "matn": "Kichkina o'ra, ichi to'la mixcha.",
+    "matn": "Kichkina oxurcha, ichi to'la mixcha.",
     "javob": "tish",
     "javob_variantlar": [
       "tish",
@@ -516,7 +516,7 @@
   },
   {
     "id": "t043",
-    "matn": "Yer tagida ezinam oti kishnaydi.",
+    "matn": "Yer tagida yeznam oti kishnaydi.",
     "javob": "sichqon",
     "javob_variantlar": [
       "sichqon"
@@ -1605,7 +1605,7 @@
   },
   {
     "id": "t133",
-    "matn": "Kichkina filday, menga qarab kuldi.",
+    "matn": "Kichkina fildi, menga qarab kuldi.",
     "javob": "oyna",
     "javob_variantlar": [
       "oyna",
@@ -1986,7 +1986,7 @@
   },
   {
     "id": "t164",
-    "matn": "Joni bor, tinglaydi, qo'lsiz, yozadi, tilsiz, so'zlaydi.",
+    "matn": "Jonsiz, tinglaydi, qo'lsiz, yozadi, tilsiz, so'zlaydi.",
     "javob": "magnitafon",
     "javob_variantlar": [
       "magnitafon"
