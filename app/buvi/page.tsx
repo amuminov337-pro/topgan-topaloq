@@ -11,6 +11,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Sahifa from "@/components/Sahifa";
 import { ikonkaEmoji } from "@/lib/ikonka";
+import { natijaniSaqla } from "@/lib/saqlash";
 
 type OchiqTopishmoq = {
   id: string;
@@ -114,8 +115,9 @@ export default function BuviSahifa() {
 
   /** Javob to'g'ri chiqqanda, tabriq paniga qo'shish uchun aniq javob
    * matnini oladi (bu — foydalanuvchi allaqachon to'g'ri topgani uchun
-   * "javobni oshkor qilish" degani emas). */
-  async function togriJavobniOl(id: string) {
+   * "javobni oshkor qilish" degani emas) va F8 uchun natijani localStorage'ga
+   * yozadi — faqat CHINDAN topilgan (oshkor qilinmagan) javoblar hisoblanadi. */
+  async function togriJavobniOl(id: string, ikonka: string) {
     try {
       const sorovNatijasi = await fetch("/api/topishmoq/javob", {
         method: "POST",
@@ -125,6 +127,7 @@ export default function BuviSahifa() {
       if (!sorovNatijasi.ok) throw new Error("server xatosi");
       const { javob } = (await sorovNatijasi.json()) as { javob: string };
       setTogriJavobMatni(javob);
+      natijaniSaqla({ id, belgi: ikonkaEmoji(ikonka), nom: javob });
     } catch {
       // Ko'rsatib bo'lmasa ham muhim emas — tabrik matni baribir chiqadi.
     }
@@ -166,7 +169,10 @@ export default function BuviSahifa() {
 
       if (togri) {
         setNatija("togri");
-        await Promise.all([togriJavobniOl(topishmoq.id), izohSora(topishmoq.id)]);
+        await Promise.all([
+          togriJavobniOl(topishmoq.id, topishmoq.ikonka),
+          izohSora(topishmoq.id),
+        ]);
         return;
       }
 
