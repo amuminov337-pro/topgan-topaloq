@@ -63,7 +63,11 @@ function javobOshkorQilinganmi(matn: string, taqiqlanganShakllar: string[]): boo
 }
 
 const DARAJA_YONALISHI: Record<MaslahatDarajasi, string> = {
-  1: "Faqat UMUMIY TOIFANI ayt — bu qanday narsalar turkumiga oid ekanini (masalan hayvonmi, uy buyumimi, tabiat hodisasimi). Juda umumiy bo'lsin.",
+  1:
+    "Faqat UMUMIY TOIFANI ayt — bu qanday narsalar turkumiga oid ekanini (masalan hayvonmi, uy " +
+    "buyumimi, tabiat hodisasimi). Juda umumiy bo'lsin va oddiy, kundalik so'zlardan foydalan — " +
+    "javobning xalq tilidagi she'riy nomi yoki laqabi (masalan \"temir qush\", \"temir ot\" kabi) " +
+    "bilan emas.",
   2: "Endi javobning XUSUSIYATINI ayt — u qanday ko'rinishda, nima uchun ishlatiladi yoki qachon kerak bo'lishi haqida bitta aniqroq belgi ber.",
   3:
     "Endi DEYARLI OSHKORA maslahat ber. MUHIM: bu shunchaki toifaning umumiy tavsifi " +
@@ -89,6 +93,11 @@ export async function maslahatOl(
     "Sen o'zbek xalq topishmoqlari ilovasidagi mehribon, sabrli buvisan. " +
     "Foydalanuvchi topishmoqqa noto'g'ri javob berdi va sendan maslahat so'ramoqda. " +
     "QAT'IY QOIDA: javob so'zini, uning birorta shaklini yoki sinonimini HECH QACHON aytma. " +
+    "Bunga javobning xalq orasida mashhur bo'lgan boshqa nomi, laqabi yoki majoziy ta'rifi ham " +
+    "kiradi (masalan samolyot uchun \"temir qush\", poyezd uchun \"temir ot\", paxta uchun " +
+    "\"oq oltin\" kabi iboralar) — bular ham javobni to'g'ridan-to'g'ri aytish bilan barobar, " +
+    "shuning uchun bunday mashhur laqab yoki majoziy nomlardan ASLO foydalanma, faqat oddiy " +
+    "tavsiflovchi so'zlar bilan gapir. " +
     "Faqat bitta qisqa, samimiy o'zbekcha jumla yoz — tushuntirish, uzr so'rash yoki qo'shimcha izoh yo'q.";
 
   const foydalanuvchiSorovi =
