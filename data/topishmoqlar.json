@@ -1,0 +1,2073 @@
+[
+  {
+    "id": "t001",
+    "matn": "Ko'k ko'ylakka qo'l yetmas.",
+    "javob": "osmon",
+    "javob_variantlar": [
+      "osmon"
+    ],
+    "toifa": "tabiat",
+    "daraja": 1,
+    "ikonka": "sky",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t002",
+    "matn": "Oppoq sandiq ochildi, olamga nur sochildi.",
+    "javob": "quyosh",
+    "javob_variantlar": [
+      "quyosh",
+      "oftob"
+    ],
+    "toifa": "tabiat",
+    "daraja": 2,
+    "ikonka": "sun",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t003",
+    "matn": "Suvda yotar — suv ichmas, yurganini odam bilmas.",
+    "javob": "quyosh",
+    "javob_variantlar": [
+      "quyosh",
+      "oftob"
+    ],
+    "toifa": "tabiat",
+    "daraja": 3,
+    "ikonka": "sun",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t004",
+    "matn": "Kecha tomda bir patir ko'rdim, erta qarasam — yo'q.",
+    "javob": "oy",
+    "javob_variantlar": [
+      "oy"
+    ],
+    "toifa": "tabiat",
+    "daraja": 2,
+    "ikonka": "moon",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t005",
+    "matn": "Kichkinadir o'zi, yiltir-yiltir ko'zi.",
+    "javob": "yulduz",
+    "javob_variantlar": [
+      "yulduz"
+    ],
+    "toifa": "tabiat",
+    "daraja": 1,
+    "ikonka": "star",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t006",
+    "matn": "Zar gilam, zar-zar gilam, ko'taray desam, og'ir gilam.",
+    "javob": "yer",
+    "javob_variantlar": [
+      "yer",
+      "zamin"
+    ],
+    "toifa": "tabiat",
+    "daraja": 2,
+    "ikonka": "earth",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t007",
+    "matn": "Uzun terak, soyasi yo'q.",
+    "javob": "suv",
+    "javob_variantlar": [
+      "suv"
+    ],
+    "toifa": "tabiat",
+    "daraja": 2,
+    "ikonka": "water-drop",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t008",
+    "matn": "Ko'zga ko'rinmas, qo'lga tutilmas.",
+    "javob": "havo",
+    "javob_variantlar": [
+      "havo"
+    ],
+    "toifa": "tabiat",
+    "daraja": 2,
+    "ikonka": "wind",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t009",
+    "matn": "Oyog'i yo'q, qochadi, qanoti yo'q, uchadi.",
+    "javob": "bulut",
+    "javob_variantlar": [
+      "bulut"
+    ],
+    "toifa": "tabiat",
+    "daraja": 2,
+    "ikonka": "cloud",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t010",
+    "matn": "Oppoqqina dasturxon, yer yuzini qoplagan.",
+    "javob": "qor",
+    "javob_variantlar": [
+      "qor"
+    ],
+    "toifa": "tabiat",
+    "daraja": 1,
+    "ikonka": "snow",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t011",
+    "matn": "Ariqdan oyna oldim.",
+    "javob": "muz",
+    "javob_variantlar": [
+      "muz"
+    ],
+    "toifa": "tabiat",
+    "daraja": 2,
+    "ikonka": "ice",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t012",
+    "matn": "Qo'lsiz, oyoqsiz eshik ochar.",
+    "javob": "shamol",
+    "javob_variantlar": [
+      "shamol",
+      "yel"
+    ],
+    "toifa": "tabiat",
+    "daraja": 2,
+    "ikonka": "wind",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t013",
+    "matn": "Tebranadi, joni yo'q.",
+    "javob": "zilzila",
+    "javob_variantlar": [
+      "zilzila"
+    ],
+    "toifa": "tabiat",
+    "daraja": 2,
+    "ikonka": "earthquake",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t014",
+    "matn": "Chopsa, chopilmas, kessa, kesilmas.",
+    "javob": "soya",
+    "javob_variantlar": [
+      "soya"
+    ],
+    "toifa": "tabiat",
+    "daraja": 2,
+    "ikonka": "shadow",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t015",
+    "matn": "Bir tepalikda yetti teshik.",
+    "javob": "bosh",
+    "javob_variantlar": [
+      "bosh",
+      "yuz"
+    ],
+    "toifa": "odam-azolari",
+    "daraja": 2,
+    "ikonka": "head",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t016",
+    "matn": "Uy ustida sara yoy.",
+    "javob": "qosh",
+    "javob_variantlar": [
+      "qosh"
+    ],
+    "toifa": "odam-azolari",
+    "daraja": 1,
+    "ikonka": "eyebrow",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t017",
+    "matn": "Tom ustida qo'sh chiroq.",
+    "javob": "ko'z",
+    "javob_variantlar": [
+      "ko'z"
+    ],
+    "toifa": "odam-azolari",
+    "daraja": 1,
+    "ikonka": "eye",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t018",
+    "matn": "Qarichdan yaqin, osmondan uzoq.",
+    "javob": "ko'z",
+    "javob_variantlar": [
+      "ko'z"
+    ],
+    "toifa": "odam-azolari",
+    "daraja": 3,
+    "ikonka": "eye",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t019",
+    "matn": "Ustida ikki darcha, o'rtasida bir kunda.",
+    "javob": "burun",
+    "javob_variantlar": [
+      "burun"
+    ],
+    "toifa": "odam-azolari",
+    "daraja": 2,
+    "ikonka": "nose",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t020",
+    "matn": "Bir teshikda hamma olam.",
+    "javob": "quloq",
+    "javob_variantlar": [
+      "quloq"
+    ],
+    "toifa": "odam-azolari",
+    "daraja": 2,
+    "ikonka": "ear",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t021",
+    "matn": "G'aznadir, to'lmas, bir kun bo'sh bo'lmas.",
+    "javob": "og'iz",
+    "javob_variantlar": [
+      "og'iz"
+    ],
+    "toifa": "odam-azolari",
+    "daraja": 2,
+    "ikonka": "mouth",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t022",
+    "matn": "Temir qo'rg'on ichida, qizil toychoq o'ynaydi.",
+    "javob": "til",
+    "javob_variantlar": [
+      "til"
+    ],
+    "toifa": "odam-azolari",
+    "daraja": 2,
+    "ikonka": "tongue",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t023",
+    "matn": "Kichkina o'ra, ichi to'la mixcha.",
+    "javob": "tish",
+    "javob_variantlar": [
+      "tish",
+      "tishlar"
+    ],
+    "toifa": "odam-azolari",
+    "daraja": 1,
+    "ikonka": "tooth",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t024",
+    "matn": "Besh otim, beshovi ham qashqa otim.",
+    "javob": "barmoqlar",
+    "javob_variantlar": [
+      "barmoq",
+      "barmoqlar"
+    ],
+    "toifa": "odam-azolari",
+    "daraja": 1,
+    "ikonka": "finger",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t025",
+    "matn": "Beshta botir, orqasi yaltir.",
+    "javob": "tirnoq",
+    "javob_variantlar": [
+      "tirnoq",
+      "tirnoqlar"
+    ],
+    "toifa": "odam-azolari",
+    "daraja": 2,
+    "ikonka": "nail",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t026",
+    "matn": "Ikki otim bor, bir-biridan chopog'on.",
+    "javob": "oyoq",
+    "javob_variantlar": [
+      "oyoq",
+      "oyoqlar"
+    ],
+    "toifa": "odam-azolari",
+    "daraja": 1,
+    "ikonka": "leg",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t027",
+    "matn": "Bir nafasda olamni kezar.",
+    "javob": "fikr",
+    "javob_variantlar": [
+      "fikr",
+      "o'y",
+      "xayol"
+    ],
+    "toifa": "odam-azolari",
+    "daraja": 3,
+    "ikonka": "thought",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t028",
+    "matn": "To'rt oyoqli, temir tuyoqli.",
+    "javob": "ot",
+    "javob_variantlar": [
+      "ot"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 1,
+    "ikonka": "horse",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t029",
+    "matn": "Quyon emas, uzun quloq, ot emas, to'rtta tuyoq.",
+    "javob": "eshak",
+    "javob_variantlar": [
+      "eshak"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 2,
+    "ikonka": "donkey",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t030",
+    "matn": "O'zi katta, dumi kalta.",
+    "javob": "tuya",
+    "javob_variantlar": [
+      "tuya"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 1,
+    "ikonka": "camel",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t031",
+    "matn": "Boraveradi, boraveradi, bo'yradek yerni olib yotadi.",
+    "javob": "sigir",
+    "javob_variantlar": [
+      "sigir"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 2,
+    "ikonka": "cow",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t032",
+    "matn": "Yerdan chiqadi qoziq, isi juda sassiq.",
+    "javob": "yumronqoziq",
+    "javob_variantlar": [
+      "yumronqoziq"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 3,
+    "ikonka": "gopher",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t033",
+    "matn": "Soqoli bor, aqli yo'q.",
+    "javob": "echki",
+    "javob_variantlar": [
+      "echki"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 1,
+    "ikonka": "goat",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t034",
+    "matn": "Kichkintoygina bo'yi bor, aylantirgan to'ni bor.",
+    "javob": "qo'y",
+    "javob_variantlar": [
+      "qo'y"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 2,
+    "ikonka": "sheep",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t035",
+    "matn": "El yotsa ham, shalpangquloq yotmaydi.",
+    "javob": "it",
+    "javob_variantlar": [
+      "it"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 2,
+    "ikonka": "dog",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t036",
+    "matn": "Mo'ylovi bor, soqoli yo'q.",
+    "javob": "mushuk",
+    "javob_variantlar": [
+      "mushuk"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 1,
+    "ikonka": "cat",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t037",
+    "matn": "Uydek joyni olar, sichqondan qo'rqar.",
+    "javob": "fil",
+    "javob_variantlar": [
+      "fil"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 2,
+    "ikonka": "elephant",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t038",
+    "matn": "Yo'l-yo'l to'ni bor, odam qo'rqar turqi bor.",
+    "javob": "yo'lbars",
+    "javob_variantlar": [
+      "yo'lbars"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 2,
+    "ikonka": "tiger",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t039",
+    "matn": "Dalama-dala qidiradi, qo'y bilan echki oh uradi.",
+    "javob": "bo'ri",
+    "javob_variantlar": [
+      "bo'ri"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 2,
+    "ikonka": "wolf",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t040",
+    "matn": "Kechasi ovda, kunduzi uyda.",
+    "javob": "tulki",
+    "javob_variantlar": [
+      "tulki"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 2,
+    "ikonka": "fox",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t041",
+    "matn": "O'zi yo'rtiq, labi tirtiq.",
+    "javob": "quyon",
+    "javob_variantlar": [
+      "quyon"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 2,
+    "ikonka": "rabbit",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t042",
+    "matn": "Yer tagida qubba igna.",
+    "javob": "tipratikan",
+    "javob_variantlar": [
+      "tipratikan"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 2,
+    "ikonka": "hedgehog",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t043",
+    "matn": "Yer tagida ezinam oti kishnaydi.",
+    "javob": "sichqon",
+    "javob_variantlar": [
+      "sichqon"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 3,
+    "ikonka": "mouse",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t044",
+    "matn": "Qanotli, sut beradi.",
+    "javob": "ko'rshapalak",
+    "javob_variantlar": [
+      "ko'rshapalak"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 2,
+    "ikonka": "bat",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t045",
+    "matn": "Qishda bir joyda, yozda ming joyda.",
+    "javob": "baliq",
+    "javob_variantlar": [
+      "baliq"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 3,
+    "ikonka": "fish",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t046",
+    "matn": "Sassiq ko'lda it hurar.",
+    "javob": "baqa",
+    "javob_variantlar": [
+      "baqa",
+      "qurbaqa"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 2,
+    "ikonka": "frog",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t047",
+    "matn": "Yer ustida o'rmalar, chopay desa chopolmas.",
+    "javob": "toshbaqa",
+    "javob_variantlar": [
+      "toshbaqa"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 2,
+    "ikonka": "turtle",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t048",
+    "matn": "Yer tagida yog'li qamchi.",
+    "javob": "ilon",
+    "javob_variantlar": [
+      "ilon"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 2,
+    "ikonka": "snake",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t049",
+    "matn": "Qoragina popish, devolga yopish.",
+    "javob": "kaltakesak",
+    "javob_variantlar": [
+      "kaltakesak"
+    ],
+    "toifa": "hayvonot",
+    "daraja": 2,
+    "ikonka": "lizard",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t050",
+    "matn": "Erta turadi, jar chaqiradi.",
+    "javob": "xo'roz",
+    "javob_variantlar": [
+      "xo'roz"
+    ],
+    "toifa": "qushlar",
+    "daraja": 1,
+    "ikonka": "rooster",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t051",
+    "matn": "Boshi taroq, dumi o'roq.",
+    "javob": "xo'roz",
+    "javob_variantlar": [
+      "xo'roz"
+    ],
+    "toifa": "qushlar",
+    "daraja": 2,
+    "ikonka": "rooster",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t052",
+    "matn": "Mening bir o'tovim bor, oynasi, eshigi yo'q.",
+    "javob": "tuxum",
+    "javob_variantlar": [
+      "tuxum"
+    ],
+    "toifa": "qushlar",
+    "daraja": 2,
+    "ikonka": "egg",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t053",
+    "matn": "Kasbi doim taqir-tuqur, qayda ilon ko'rsa cho'qir.",
+    "javob": "laylak",
+    "javob_variantlar": [
+      "laylak"
+    ],
+    "toifa": "qushlar",
+    "daraja": 2,
+    "ikonka": "stork",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t054",
+    "matn": "Boyning o'g'li ko'kka qarab yig'laydi.",
+    "javob": "boyo'g'li",
+    "javob_variantlar": [
+      "boyo'g'li"
+    ],
+    "toifa": "qushlar",
+    "daraja": 3,
+    "ikonka": "owl",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t055",
+    "matn": "Yozda keladi, qishda ketadi.",
+    "javob": "zag'izg'on",
+    "javob_variantlar": [
+      "zag'izg'on"
+    ],
+    "toifa": "qushlar",
+    "daraja": 2,
+    "ikonka": "magpie",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t056",
+    "matn": "Gul ustida olifta ashulachi.",
+    "javob": "bulbul",
+    "javob_variantlar": [
+      "bulbul"
+    ],
+    "toifa": "qushlar",
+    "daraja": 2,
+    "ikonka": "nightingale",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t057",
+    "matn": "Zuv-zuv boragay, tomdan qarag'ay, cho'p-loy cho'qig'ay, savat to'qig'ay.",
+    "javob": "qaldirg'och",
+    "javob_variantlar": [
+      "qaldirg'och"
+    ],
+    "toifa": "qushlar",
+    "daraja": 3,
+    "ikonka": "swallow",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t058",
+    "matn": "Kichkina juvonmarg, tom boshidan o'tin tashlaydi.",
+    "javob": "chumchuq",
+    "javob_variantlar": [
+      "chumchuq"
+    ],
+    "toifa": "qushlar",
+    "daraja": 2,
+    "ikonka": "sparrow",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t059",
+    "matn": "Kichkina mitti, shoxini tirab suv ichdi.",
+    "javob": "ari",
+    "javob_variantlar": [
+      "ari"
+    ],
+    "toifa": "hasharotlar",
+    "daraja": 2,
+    "ikonka": "bee",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t060",
+    "matn": "Tutdan bizga ko'ylak to'qir.",
+    "javob": "ipak qurti",
+    "javob_variantlar": [
+      "ipak qurti"
+    ],
+    "toifa": "hasharotlar",
+    "daraja": 3,
+    "ikonka": "silkworm",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t061",
+    "matn": "Qanoti bor, qoni yo'q, tuxum qo'yar, soni yo'q.",
+    "javob": "kapalak",
+    "javob_variantlar": [
+      "kapalak"
+    ],
+    "toifa": "hasharotlar",
+    "daraja": 2,
+    "ikonka": "butterfly",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t062",
+    "matn": "O'tirishi o'ymoqday, baqirishi toyloqday.",
+    "javob": "chigirtka",
+    "javob_variantlar": [
+      "chigirtka"
+    ],
+    "toifa": "hasharotlar",
+    "daraja": 2,
+    "ikonka": "grasshopper",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t063",
+    "matn": "O'zi qora, qanotli, shoxlari bor, tirnoqli.",
+    "javob": "qo'ng'iz",
+    "javob_variantlar": [
+      "qo'ng'iz"
+    ],
+    "toifa": "hasharotlar",
+    "daraja": 2,
+    "ikonka": "beetle",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t064",
+    "matn": "Bir otim bor ajabgina, dumlari bor gajakkina.",
+    "javob": "chayon",
+    "javob_variantlar": [
+      "chayon"
+    ],
+    "toifa": "hasharotlar",
+    "daraja": 2,
+    "ikonka": "scorpion",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t065",
+    "matn": "Beli qilday, boshi xumday.",
+    "javob": "chumoli",
+    "javob_variantlar": [
+      "chumoli"
+    ],
+    "toifa": "hasharotlar",
+    "daraja": 1,
+    "ikonka": "ant",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t066",
+    "matn": "U yoqqa boradi, bu yoqqa boradi, bo'z to'qiydi.",
+    "javob": "o'rgimchak",
+    "javob_variantlar": [
+      "o'rgimchak"
+    ],
+    "toifa": "hasharotlar",
+    "daraja": 2,
+    "ikonka": "spider",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t067",
+    "matn": "Kichkina-mitti, qo'limga olsam, qovurg'asi sinib ketdi.",
+    "javob": "chivin",
+    "javob_variantlar": [
+      "chivin"
+    ],
+    "toifa": "hasharotlar",
+    "daraja": 2,
+    "ikonka": "fly",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t068",
+    "matn": "Kichkina qozon, jingla palov.",
+    "javob": "yong'oq",
+    "javob_variantlar": [
+      "yong'oq"
+    ],
+    "toifa": "o'simliklar",
+    "daraja": 2,
+    "ikonka": "walnut",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t069",
+    "matn": "Ikki tog'ning orasida bir tup yantoq.",
+    "javob": "bodom",
+    "javob_variantlar": [
+      "bodom"
+    ],
+    "toifa": "o'simliklar",
+    "daraja": 2,
+    "ikonka": "almond",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t070",
+    "matn": "Osh ichida tosh, tosh ichida osh.",
+    "javob": "o'rik",
+    "javob_variantlar": [
+      "o'rik"
+    ],
+    "toifa": "o'simliklar",
+    "daraja": 2,
+    "ikonka": "apricot",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t071",
+    "matn": "O'zi ko'm-ko'k, yuzi qip-qizil.",
+    "javob": "olma",
+    "javob_variantlar": [
+      "olma"
+    ],
+    "toifa": "o'simliklar",
+    "daraja": 1,
+    "ikonka": "apple",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t072",
+    "matn": "O'zi shirin, tukligina, mazasi bor, totligina.",
+    "javob": "shaftoli",
+    "javob_variantlar": [
+      "shaftoli"
+    ],
+    "toifa": "o'simliklar",
+    "daraja": 1,
+    "ikonka": "peach",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t073",
+    "matn": "Dum-dumaloq bo'yi bor, palovda obro'yi bor.",
+    "javob": "behi",
+    "javob_variantlar": [
+      "behi"
+    ],
+    "toifa": "o'simliklar",
+    "daraja": 2,
+    "ikonka": "quince",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t074",
+    "matn": "Qirq hujrada qizil qizlar.",
+    "javob": "anor",
+    "javob_variantlar": [
+      "anor"
+    ],
+    "toifa": "o'simliklar",
+    "daraja": 2,
+    "ikonka": "pomegranate",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t075",
+    "matn": "Otasi bukri xo'ja, onasi yoyma chalpak, bolasi shirin-shakar.",
+    "javob": "uzum",
+    "javob_variantlar": [
+      "uzum"
+    ],
+    "toifa": "o'simliklar",
+    "daraja": 3,
+    "ikonka": "grape",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t076",
+    "matn": "Gulsiz bo'lar mevasi, shirin-shirin donasi.",
+    "javob": "anjir",
+    "javob_variantlar": [
+      "anjir"
+    ],
+    "toifa": "o'simliklar",
+    "daraja": 2,
+    "ikonka": "fig",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t077",
+    "matn": "Bir qop un, ichida ustun.",
+    "javob": "jiyda",
+    "javob_variantlar": [
+      "jiyda"
+    ],
+    "toifa": "o'simliklar",
+    "daraja": 2,
+    "ikonka": "jida",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t078",
+    "matn": "Chopsang kular, chopmasang o'lar.",
+    "javob": "paxta",
+    "javob_variantlar": [
+      "paxta"
+    ],
+    "toifa": "ekin-dala",
+    "daraja": 2,
+    "ikonka": "cotton",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t079",
+    "matn": "Hamma yog'i qiltiq, hamma unga intiq.",
+    "javob": "bug'doy",
+    "javob_variantlar": [
+      "bug'doy"
+    ],
+    "toifa": "ekin-dala",
+    "daraja": 2,
+    "ikonka": "wheat",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t080",
+    "matn": "Solaman qizil, chiqaraman oq.",
+    "javob": "bug'doy",
+    "javob_variantlar": [
+      "bug'doy",
+      "un"
+    ],
+    "toifa": "ekin-dala",
+    "daraja": 3,
+    "ikonka": "wheat",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t081",
+    "matn": "Kichkina qiz, qo'lida bigiz.",
+    "javob": "sholi",
+    "javob_variantlar": [
+      "sholi",
+      "guruch"
+    ],
+    "toifa": "ekin-dala",
+    "daraja": 2,
+    "ikonka": "rice",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t082",
+    "matn": "Yerdan chiqar taranib, zarrin dastor o'ranib.",
+    "javob": "makkajo'xori",
+    "javob_variantlar": [
+      "makkajo'xori",
+      "jo'xori"
+    ],
+    "toifa": "ekin-dala",
+    "daraja": 2,
+    "ikonka": "corn",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t083",
+    "matn": "Bo'yi bir qarich, soqoli ikki qarich.",
+    "javob": "makkajo'xori",
+    "javob_variantlar": [
+      "makkajo'xori"
+    ],
+    "toifa": "ekin-dala",
+    "daraja": 2,
+    "ikonka": "corn",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t084",
+    "matn": "Uzun-uzun ko'chalar, ichi to'la bachchalar.",
+    "javob": "loviya",
+    "javob_variantlar": [
+      "loviya"
+    ],
+    "toifa": "ekin-dala",
+    "daraja": 2,
+    "ikonka": "beans",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t085",
+    "matn": "O'zi pishiq, burni qiyshiq.",
+    "javob": "no'xat",
+    "javob_variantlar": [
+      "no'xat"
+    ],
+    "toifa": "ekin-dala",
+    "daraja": 2,
+    "ikonka": "chickpea",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t086",
+    "matn": "Qora-qora qo'g'irmoch.",
+    "javob": "mosh",
+    "javob_variantlar": [
+      "mosh"
+    ],
+    "toifa": "ekin-dala",
+    "daraja": 2,
+    "ikonka": "mung-bean",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t087",
+    "matn": "Kunga qarab tolmaydi, kundan ko'zni olmaydi.",
+    "javob": "kungaboqar",
+    "javob_variantlar": [
+      "kungaboqar"
+    ],
+    "toifa": "ekin-dala",
+    "daraja": 1,
+    "ikonka": "sunflower",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t088",
+    "matn": "Xo'ppa semiz, bir tuki yo'q.",
+    "javob": "tarvuz",
+    "javob_variantlar": [
+      "tarvuz"
+    ],
+    "toifa": "poliz-sabzavot",
+    "daraja": 1,
+    "ikonka": "watermelon",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t089",
+    "matn": "Zar-zar to'ni bor, zarbdan panohi bor.",
+    "javob": "qovun",
+    "javob_variantlar": [
+      "qovun"
+    ],
+    "toifa": "poliz-sabzavot",
+    "daraja": 2,
+    "ikonka": "melon",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t090",
+    "matn": "Oppoq, semiz, moyi yo'q, terisi qalin, juni yo'q.",
+    "javob": "oshqovoq",
+    "javob_variantlar": [
+      "oshqovoq",
+      "qovoq"
+    ],
+    "toifa": "poliz-sabzavot",
+    "daraja": 2,
+    "ikonka": "pumpkin",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t091",
+    "matn": "Pishmaganda mazali, pishganda mazasiz.",
+    "javob": "bodring",
+    "javob_variantlar": [
+      "bodring"
+    ],
+    "toifa": "poliz-sabzavot",
+    "daraja": 2,
+    "ikonka": "cucumber",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t092",
+    "matn": "Qat-qat to'nli, qarich bo'yli.",
+    "javob": "karam",
+    "javob_variantlar": [
+      "karam"
+    ],
+    "toifa": "poliz-sabzavot",
+    "daraja": 1,
+    "ikonka": "cabbage",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t093",
+    "matn": "Yer tagida oltin bosh.",
+    "javob": "sholg'om",
+    "javob_variantlar": [
+      "sholg'om"
+    ],
+    "toifa": "poliz-sabzavot",
+    "daraja": 2,
+    "ikonka": "turnip",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t094",
+    "matn": "Yer tagida chaksa go'sht.",
+    "javob": "lavlagi",
+    "javob_variantlar": [
+      "lavlagi"
+    ],
+    "toifa": "poliz-sabzavot",
+    "daraja": 2,
+    "ikonka": "beet",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t095",
+    "matn": "Yer tagida oltin qoziq.",
+    "javob": "sabzi",
+    "javob_variantlar": [
+      "sabzi"
+    ],
+    "toifa": "poliz-sabzavot",
+    "daraja": 1,
+    "ikonka": "carrot",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t096",
+    "matn": "Past-past bo'yi bor, yetti qavat to'ni bor.",
+    "javob": "piyoz",
+    "javob_variantlar": [
+      "piyoz"
+    ],
+    "toifa": "poliz-sabzavot",
+    "daraja": 1,
+    "ikonka": "onion",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t097",
+    "matn": "Bir barmoqcha bo'yi bor, qizil baxmal to'ni bor.",
+    "javob": "garmdori",
+    "javob_variantlar": [
+      "garmdori"
+    ],
+    "toifa": "poliz-sabzavot",
+    "daraja": 2,
+    "ikonka": "pepper",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t098",
+    "matn": "Xom soldim, pishiq oldim.",
+    "javob": "non",
+    "javob_variantlar": [
+      "non"
+    ],
+    "toifa": "oziq-ovqat",
+    "daraja": 1,
+    "ikonka": "bread",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t099",
+    "matn": "Bir qozondan qirq tuya suv ichar.",
+    "javob": "chuchvara",
+    "javob_variantlar": [
+      "chuchvara"
+    ],
+    "toifa": "oziq-ovqat",
+    "daraja": 3,
+    "ikonka": "dumpling",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t100",
+    "matn": "Suv emas, suyuq, qor emas, oq.",
+    "javob": "sut",
+    "javob_variantlar": [
+      "sut"
+    ],
+    "toifa": "oziq-ovqat",
+    "daraja": 1,
+    "ikonka": "milk",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t101",
+    "matn": "Oltmish ikki aybni oq yopar.",
+    "javob": "qatiq",
+    "javob_variantlar": [
+      "qatiq"
+    ],
+    "toifa": "oziq-ovqat",
+    "daraja": 3,
+    "ikonka": "yogurt",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t102",
+    "matn": "O'zi oppoq, qor emas, non bo'lmaydi, un emas.",
+    "javob": "shakar",
+    "javob_variantlar": [
+      "shakar",
+      "qand"
+    ],
+    "toifa": "oziq-ovqat",
+    "daraja": 2,
+    "ikonka": "sugar",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t103",
+    "matn": "Bir o'rdakka bir chimdim.",
+    "javob": "choy",
+    "javob_variantlar": [
+      "choy"
+    ],
+    "toifa": "oziq-ovqat",
+    "daraja": 2,
+    "ikonka": "tea",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t104",
+    "matn": "Chaynaladi, chaynaladi, yutilmaydi.",
+    "javob": "saqich",
+    "javob_variantlar": [
+      "saqich",
+      "jevachka"
+    ],
+    "toifa": "oziq-ovqat",
+    "daraja": 1,
+    "ikonka": "gum",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t105",
+    "matn": "Qorong'i uyda shivir-shivir.",
+    "javob": "shovla",
+    "javob_variantlar": [
+      "shovla"
+    ],
+    "toifa": "oziq-ovqat",
+    "daraja": 3,
+    "ikonka": "porridge",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t106",
+    "matn": "Urdim, gup etdi, yer tagiga kirib ketdi.",
+    "javob": "ketmon",
+    "javob_variantlar": [
+      "ketmon"
+    ],
+    "toifa": "mehnat-qurollari",
+    "daraja": 2,
+    "ikonka": "hoe",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t107",
+    "matn": "G'it-g'it deydi, ishlaydi, yerga kukun tashlaydi.",
+    "javob": "arra",
+    "javob_variantlar": [
+      "arra"
+    ],
+    "toifa": "mehnat-qurollari",
+    "daraja": 2,
+    "ikonka": "saw",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t108",
+    "matn": "Tushgan yerini uzar.",
+    "javob": "ombur",
+    "javob_variantlar": [
+      "ombur"
+    ],
+    "toifa": "mehnat-qurollari",
+    "daraja": 2,
+    "ikonka": "pliers",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t109",
+    "matn": "Guv-guv etadi, marg'ilon ketadi.",
+    "javob": "urchuq",
+    "javob_variantlar": [
+      "urchuq"
+    ],
+    "toifa": "mehnat-qurollari",
+    "daraja": 3,
+    "ikonka": "spindle",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t110",
+    "matn": "Bizning uyda to'rt kampir, to'rtovi ham mard kampir.",
+    "javob": "savag'ich",
+    "javob_variantlar": [
+      "savag'ich"
+    ],
+    "toifa": "mehnat-qurollari",
+    "daraja": 3,
+    "ikonka": "wool-comb",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t111",
+    "matn": "Yer ostida g'olton guldiraydi.",
+    "javob": "tegirmon",
+    "javob_variantlar": [
+      "tegirmon"
+    ],
+    "toifa": "mehnat-qurollari",
+    "daraja": 2,
+    "ikonka": "mill",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t112",
+    "matn": "Tap-tap etadi, tagidan karvon o'tadi.",
+    "javob": "elak",
+    "javob_variantlar": [
+      "elak"
+    ],
+    "toifa": "mehnat-qurollari",
+    "daraja": 2,
+    "ikonka": "sieve",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t113",
+    "matn": "Ko'p yeydi, tez yeydi, mayda chaynaydi, o'zi yuta olmaydi, o'zgalarni to'ydiradi.",
+    "javob": "tegirmon",
+    "javob_variantlar": [
+      "tegirmon"
+    ],
+    "toifa": "mehnat-qurollari",
+    "daraja": 3,
+    "ikonka": "mill",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t114",
+    "matn": "Kunduzi tashqari, kechasi ichkari.",
+    "javob": "eshik",
+    "javob_variantlar": [
+      "eshik"
+    ],
+    "toifa": "uy-joy",
+    "daraja": 1,
+    "ikonka": "door",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t115",
+    "matn": "Qoravoy buvam eshik qo'rir.",
+    "javob": "qulf",
+    "javob_variantlar": [
+      "qulf"
+    ],
+    "toifa": "uy-joy",
+    "daraja": 2,
+    "ikonka": "lock",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t116",
+    "matn": "Olisdan jangir-jungir, yaqindan oddiy temir.",
+    "javob": "kalit",
+    "javob_variantlar": [
+      "kalit"
+    ],
+    "toifa": "uy-joy",
+    "daraja": 2,
+    "ikonka": "key",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t117",
+    "matn": "Uzun bo'yli, qora to'nli.",
+    "javob": "mo'ri",
+    "javob_variantlar": [
+      "mo'ri"
+    ],
+    "toifa": "uy-joy",
+    "daraja": 2,
+    "ikonka": "chimney",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t118",
+    "matn": "O'zi katta, sarpo'shi yo'q.",
+    "javob": "hovuz",
+    "javob_variantlar": [
+      "hovuz"
+    ],
+    "toifa": "uy-joy",
+    "daraja": 2,
+    "ikonka": "pool",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t119",
+    "matn": "Osmondan osilgan, yerdan qazilgan.",
+    "javob": "quduq",
+    "javob_variantlar": [
+      "quduq"
+    ],
+    "toifa": "uy-joy",
+    "daraja": 2,
+    "ikonka": "well",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t120",
+    "matn": "Tepdim, tepdim, terakka chiqdim.",
+    "javob": "narvon",
+    "javob_variantlar": [
+      "narvon"
+    ],
+    "toifa": "uy-joy",
+    "daraja": 1,
+    "ikonka": "ladder",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t121",
+    "matn": "Kunduzi yig'iladi, kechasi yoyiladi.",
+    "javob": "ko'rpa",
+    "javob_variantlar": [
+      "ko'rpa"
+    ],
+    "toifa": "uy-joy",
+    "daraja": 2,
+    "ikonka": "blanket",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t122",
+    "matn": "Tursa tuyaday, yig'ilsa kichkintoy.",
+    "javob": "pashshaxona",
+    "javob_variantlar": [
+      "pashshaxona"
+    ],
+    "toifa": "uy-joy",
+    "daraja": 3,
+    "ikonka": "mosquito-net",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t123",
+    "matn": "Kechasi oftobdek, kunduzi koptokdek.",
+    "javob": "lampochka",
+    "javob_variantlar": [
+      "lampa",
+      "chiroq",
+      "lampochka"
+    ],
+    "toifa": "uy-jihozlari",
+    "daraja": 1,
+    "ikonka": "bulb",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t124",
+    "matn": "Og'zi do'ppidek, ichi qizil, xumdek.",
+    "javob": "tandir",
+    "javob_variantlar": [
+      "tandir"
+    ],
+    "toifa": "uy-jihozlari",
+    "daraja": 2,
+    "ikonka": "tandoor",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t125",
+    "matn": "O'zi bitta, qulog'i to'rtta.",
+    "javob": "qozon",
+    "javob_variantlar": [
+      "qozon"
+    ],
+    "toifa": "uy-jihozlari",
+    "daraja": 1,
+    "ikonka": "pot",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t126",
+    "matn": "Laylak uyada, dumi ziyoda.",
+    "javob": "cho'mich",
+    "javob_variantlar": [
+      "cho'mich"
+    ],
+    "toifa": "uy-jihozlari",
+    "daraja": 2,
+    "ikonka": "ladle",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t127",
+    "matn": "Hakka uyada, quyrug'i ziyoda.",
+    "javob": "qoshiq",
+    "javob_variantlar": [
+      "qoshiq"
+    ],
+    "toifa": "uy-jihozlari",
+    "daraja": 2,
+    "ikonka": "spoon",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t128",
+    "matn": "Bozorda sariq ayg'ir kishnaydi.",
+    "javob": "samovar",
+    "javob_variantlar": [
+      "samovar"
+    ],
+    "toifa": "uy-jihozlari",
+    "daraja": 2,
+    "ikonka": "samovar",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t129",
+    "matn": "O'zi turar jimgina, qulog'i bor birgina.",
+    "javob": "choynak",
+    "javob_variantlar": [
+      "choynak"
+    ],
+    "toifa": "uy-jihozlari",
+    "daraja": 1,
+    "ikonka": "teapot",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t130",
+    "matn": "Hamma kishini ko'rganda labini o'pkay.",
+    "javob": "piyola",
+    "javob_variantlar": [
+      "piyola"
+    ],
+    "toifa": "uy-jihozlari",
+    "daraja": 2,
+    "ikonka": "cup",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t131",
+    "matn": "Borishda och minar, kelishda to'q.",
+    "javob": "ko'za",
+    "javob_variantlar": [
+      "ko'za"
+    ],
+    "toifa": "uy-jihozlari",
+    "daraja": 3,
+    "ikonka": "jug",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t132",
+    "matn": "Kichkinadir, minadir, unga odam ishonadir.",
+    "javob": "qulf",
+    "javob_variantlar": [
+      "qulf"
+    ],
+    "toifa": "uy-jihozlari",
+    "daraja": 3,
+    "ikonka": "lock",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t133",
+    "matn": "Kichkina filday, menga qarab kuldi.",
+    "javob": "oyna",
+    "javob_variantlar": [
+      "oyna",
+      "ko'zgu"
+    ],
+    "toifa": "uy-jihozlari",
+    "daraja": 2,
+    "ikonka": "mirror",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t134",
+    "matn": "Kunu tun yuradi, doim bir joyda turadi.",
+    "javob": "soat",
+    "javob_variantlar": [
+      "soat"
+    ],
+    "toifa": "uy-jihozlari",
+    "daraja": 2,
+    "ikonka": "clock",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t135",
+    "matn": "Kichkinagina sandiqcha, ichi to'la mixcha.",
+    "javob": "gugurt",
+    "javob_variantlar": [
+      "gugurt"
+    ],
+    "toifa": "uy-jihozlari",
+    "daraja": 2,
+    "ikonka": "matches",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t136",
+    "matn": "O'zining badanini o'zi yeydi.",
+    "javob": "sham",
+    "javob_variantlar": [
+      "sham"
+    ],
+    "toifa": "uy-jihozlari",
+    "daraja": 2,
+    "ikonka": "candle",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t137",
+    "matn": "Otdim, osmonga chiqdi.",
+    "javob": "do'ppi",
+    "javob_variantlar": [
+      "do'ppi"
+    ],
+    "toifa": "kiyim-kechak",
+    "daraja": 2,
+    "ikonka": "tubeteika",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t138",
+    "matn": "Kunduzi himoya qiladi, kechasi qoziqda turadi.",
+    "javob": "kiyim",
+    "javob_variantlar": [
+      "kiyim"
+    ],
+    "toifa": "kiyim-kechak",
+    "daraja": 2,
+    "ikonka": "clothes",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t139",
+    "matn": "Bir tug'ishgan ikki do'st, bo'ylari tizdan, saqlaydi qor, muzdan.",
+    "javob": "etik",
+    "javob_variantlar": [
+      "etik"
+    ],
+    "toifa": "kiyim-kechak",
+    "daraja": 2,
+    "ikonka": "boots",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t140",
+    "matn": "Besh og'ayni, qo'rasi bor, xonasi boshqa.",
+    "javob": "qo'lqop",
+    "javob_variantlar": [
+      "qo'lqop"
+    ],
+    "toifa": "kiyim-kechak",
+    "daraja": 2,
+    "ikonka": "gloves",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t141",
+    "matn": "Mush-mush, mushukkina, qo'lida ushuqqina.",
+    "javob": "uzuk",
+    "javob_variantlar": [
+      "uzuk"
+    ],
+    "toifa": "kiyim-kechak",
+    "daraja": 2,
+    "ikonka": "ring",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t142",
+    "matn": "Ikki botir qilichlashar.",
+    "javob": "qaychi",
+    "javob_variantlar": [
+      "qaychi"
+    ],
+    "toifa": "kiyim-kechak",
+    "daraja": 2,
+    "ikonka": "scissors",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t143",
+    "matn": "Hammaga to'n tikaman, o'zim yalang'och.",
+    "javob": "igna",
+    "javob_variantlar": [
+      "igna"
+    ],
+    "toifa": "kiyim-kechak",
+    "daraja": 2,
+    "ikonka": "needle",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t144",
+    "matn": "O'zi kumush, dumi uzun.",
+    "javob": "ip",
+    "javob_variantlar": [
+      "ip"
+    ],
+    "toifa": "kiyim-kechak",
+    "daraja": 3,
+    "ikonka": "thread",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t145",
+    "matn": "Tilsiz, aql o'rgatar.",
+    "javob": "kitob",
+    "javob_variantlar": [
+      "kitob"
+    ],
+    "toifa": "kitob-yozuv",
+    "daraja": 1,
+    "ikonka": "book",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t146",
+    "matn": "Tog'dan tayladim sinmadi, suvga tayladim sindi.",
+    "javob": "qog'oz",
+    "javob_variantlar": [
+      "qog'oz"
+    ],
+    "toifa": "kitob-yozuv",
+    "daraja": 3,
+    "ikonka": "paper",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t147",
+    "matn": "Sirti tayoq, ichi bo'yoq.",
+    "javob": "qalam",
+    "javob_variantlar": [
+      "qalam"
+    ],
+    "toifa": "kitob-yozuv",
+    "daraja": 2,
+    "ikonka": "pencil",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t148",
+    "matn": "Tili po'lat shovvoz, so'zlay olmas beqog'oz.",
+    "javob": "ruchka",
+    "javob_variantlar": [
+      "ruchka"
+    ],
+    "toifa": "kitob-yozuv",
+    "daraja": 2,
+    "ikonka": "pen",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t149",
+    "matn": "Qo'l bilan ekiladi, ko'z bilan teriladi, og'iz bilan o'riladi.",
+    "javob": "yozuv",
+    "javob_variantlar": [
+      "yozuv",
+      "daftar"
+    ],
+    "toifa": "kitob-yozuv",
+    "daraja": 3,
+    "ikonka": "notebook",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t150",
+    "matn": "Uch ayg'ir, haydadim tekis yo'lga.",
+    "javob": "dutor",
+    "javob_variantlar": [
+      "dutor"
+    ],
+    "toifa": "cholg'u-asboblari",
+    "daraja": 3,
+    "ikonka": "dutar",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t151",
+    "matn": "Tomda turib gilam qoqdim, changi jahonga ketdi.",
+    "javob": "nog'ora",
+    "javob_variantlar": [
+      "nog'ora",
+      "doira"
+    ],
+    "toifa": "cholg'u-asboblari",
+    "daraja": 2,
+    "ikonka": "drum",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t152",
+    "matn": "O'zi mitti, ovozi olamga yetdi.",
+    "javob": "surnay",
+    "javob_variantlar": [
+      "surnay"
+    ],
+    "toifa": "cholg'u-asboblari",
+    "daraja": 2,
+    "ikonka": "horn",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t153",
+    "matn": "Joni yo'q, ursa yig'laydi.",
+    "javob": "qo'ng'iroq",
+    "javob_variantlar": [
+      "qo'ng'iroq"
+    ],
+    "toifa": "cholg'u-asboblari",
+    "daraja": 1,
+    "ikonka": "bell",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t154",
+    "matn": "Hasan dorozi bir bukur, hovliga soladi zikir.",
+    "javob": "karnay",
+    "javob_variantlar": [
+      "karnay"
+    ],
+    "toifa": "cholg'u-asboblari",
+    "daraja": 3,
+    "ikonka": "trumpet",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t155",
+    "matn": "Uzun terak, uchi mening qo'limda.",
+    "javob": "varrak",
+    "javob_variantlar": [
+      "varrak"
+    ],
+    "toifa": "o'yin-o'yinchoq",
+    "daraja": 2,
+    "ikonka": "kite",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t156",
+    "matn": "Ukamga o'xshar o'zi, aslo yumilmas ko'zi.",
+    "javob": "qo'g'irchoq",
+    "javob_variantlar": [
+      "qo'g'irchoq"
+    ],
+    "toifa": "o'yin-o'yinchoq",
+    "daraja": 2,
+    "ikonka": "doll",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t157",
+    "matn": "Tap-tap etadi, ursam uchib ketadi.",
+    "javob": "koptok",
+    "javob_variantlar": [
+      "koptok",
+      "to'p"
+    ],
+    "toifa": "o'yin-o'yinchoq",
+    "daraja": 1,
+    "ikonka": "ball",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t158",
+    "matn": "Po'lat qushim uchdi-ketdi, bir zum o'tmay oyga yetdi.",
+    "javob": "raketa",
+    "javob_variantlar": [
+      "raketa"
+    ],
+    "toifa": "transport-texnika",
+    "daraja": 2,
+    "ikonka": "rocket",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t159",
+    "matn": "Suv emas, simda oqar, o't emas, chiroq yoqar.",
+    "javob": "elektr toki",
+    "javob_variantlar": [
+      "elektr toki",
+      "tok",
+      "elektr"
+    ],
+    "toifa": "transport-texnika",
+    "daraja": 2,
+    "ikonka": "electricity",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t160",
+    "matn": "Uyga osdik bitta nok, yop-yorug' bo'ldi har yoq.",
+    "javob": "lampochka",
+    "javob_variantlar": [
+      "lampa",
+      "chiroq",
+      "lampochka"
+    ],
+    "toifa": "transport-texnika",
+    "daraja": 1,
+    "ikonka": "bulb",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t161",
+    "matn": "Tashqari yoz, dim-olov, uychamizda muz, qirov.",
+    "javob": "muzlatgich",
+    "javob_variantlar": [
+      "muzlatgich",
+      "xolodilnik"
+    ],
+    "toifa": "transport-texnika",
+    "daraja": 2,
+    "ikonka": "fridge",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t162",
+    "matn": "Tinmas bitta, tinglar mingta.",
+    "javob": "radio",
+    "javob_variantlar": [
+      "radio"
+    ],
+    "toifa": "transport-texnika",
+    "daraja": 2,
+    "ikonka": "radio",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t163",
+    "matn": "Katta quti, ko'zi bor, ko'p tomosha, so'zi bor.",
+    "javob": "televizor",
+    "javob_variantlar": [
+      "televizor"
+    ],
+    "toifa": "transport-texnika",
+    "daraja": 1,
+    "ikonka": "tv",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t164",
+    "matn": "Joni bor, tinglaydi, qo'lsiz, yozadi, tilsiz, so'zlaydi.",
+    "javob": "magnitafon",
+    "javob_variantlar": [
+      "magnitafon"
+    ],
+    "toifa": "transport-texnika",
+    "daraja": 3,
+    "ikonka": "tape-recorder",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t165",
+    "matn": "Gurillashi tegirmonday, lekin tegirmon emas, uchishlari g'ajirday, lekin g'ajir emas.",
+    "javob": "samolyot",
+    "javob_variantlar": [
+      "samolyot"
+    ],
+    "toifa": "transport-texnika",
+    "daraja": 2,
+    "ikonka": "airplane",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t166",
+    "matn": "Cho'zilib yotar narvon, undan o'tar uy-karvon.",
+    "javob": "temir yo'l",
+    "javob_variantlar": [
+      "temir yo'l",
+      "poyezd"
+    ],
+    "toifa": "transport-texnika",
+    "daraja": 3,
+    "ikonka": "train",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t167",
+    "matn": "Ko'zi yaltiraydi, ichi qaltiraydi.",
+    "javob": "avtomashina",
+    "javob_variantlar": [
+      "avtomashina",
+      "mashina"
+    ],
+    "toifa": "transport-texnika",
+    "daraja": 2,
+    "ikonka": "car",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t168",
+    "matn": "Yozda toycha, qishda xurjun.",
+    "javob": "velosiped",
+    "javob_variantlar": [
+      "velosiped"
+    ],
+    "toifa": "transport-texnika",
+    "daraja": 3,
+    "ikonka": "bicycle",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t169",
+    "matn": "Sen ichida tursang tikka, olib chiqar yuksaklikka.",
+    "javob": "lift",
+    "javob_variantlar": [
+      "lift"
+    ],
+    "toifa": "transport-texnika",
+    "daraja": 1,
+    "ikonka": "elevator",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  },
+  {
+    "id": "t170",
+    "matn": "Uyimiz nurdan, o'rganish bizdan, o'rgatish sizdan.",
+    "javob": "maktab",
+    "javob_variantlar": [
+      "maktab"
+    ],
+    "toifa": "transport-texnika",
+    "daraja": 2,
+    "ikonka": "school",
+    "manba": "M. Abdurahimov, \"O'zbek xalq topishmoqlari\" to'plami (ziyouz.com kutubxonasi)"
+  }
+]
