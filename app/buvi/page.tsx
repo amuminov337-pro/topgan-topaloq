@@ -1,7 +1,10 @@
-// AI-buvi rejimi — F4: tasodifiy topishmoq ko'rsatiladi, foydalanuvchi javob
-// yozadi, /api/javob-tekshir orqali moslashuvchan taqqoslash bilan
-// tekshiriladi. Bosqichma-bosqich maslahat (F5) va madaniy izoh (F6) hali
-// yo'q — ular keyingi bosqichlarda shu sahifaga qo'shiladi.
+// AI-buvi rejimi.
+// F4: tasodifiy topishmoq + javob tekshirish.
+// F5: noto'g'ri javobdan keyin 3 bosqichli maslahat (toifa -> xususiyat ->
+//     deyarli oshkora), hech qachon javobni o'z ichiga olmaydi.
+// Shuningdek MASTER_PROMPT 2-bo'limidagi doimiy qoida: har bosqichda
+// "javobni ko'rsat" tugmasi bor — foydalanuvchi majburlanmaydi.
+// Madaniy izoh (F6) hali yo'q — keyingi bosqichda shu sahifaga qo'shiladi.
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
@@ -16,6 +19,9 @@ type OchiqTopishmoq = {
 };
 
 type Natija = "kutilmoqda" | "togri" | "notogri";
+type MaslahatYozuvi = { daraja: 1 | 2 | 3; matn: string };
+
+const ENG_KOP_MASLAHAT = 3;
 
 export default function BuviSahifa() {
   const [topishmoq, setTopishmoq] = useState<OchiqTopishmoq | null>(null);
@@ -25,11 +31,23 @@ export default function BuviSahifa() {
   const [tekshirilmoqda, setTekshirilmoqda] = useState(false);
   const [xato, setXato] = useState<string | null>(null);
 
+  const [notogriSoni, setNotogriSoni] = useState(0);
+  const [maslahatlar, setMaslahatlar] = useState<MaslahatYozuvi[]>([]);
+  const [maslahatYuklanmoqda, setMaslahatYuklanmoqda] = useState(false);
+
+  const [oshkorQilingan, setOshkorQilingan] = useState(false);
+  const [oshkorJavob, setOshkorJavob] = useState<string | null>(null);
+  const [oshkorYuklanmoqda, setOshkorYuklanmoqda] = useState(false);
+
   const yangiTopishmoqOl = useCallback(async (tashqariId?: string) => {
     setYuklanmoqda(true);
     setXato(null);
     setNatija("kutilmoqda");
     setKiritilganJavob("");
+    setNotogriSoni(0);
+    setMaslahatlar([]);
+    setOshkorQilingan(false);
+    setOshkorJavob(null);
     try {
       const url = tashqariId
         ? `/api/topishmoq/tasodifiy?tashqari=${encodeURIComponent(tashqariId)}`
@@ -51,6 +69,25 @@ export default function BuviSahifa() {
     yangiTopishmoqOl();
   }, [yangiTopishmoqOl]);
 
+  async function maslahatSora(id: string, daraja: 1 | 2 | 3) {
+    setMaslahatYuklanmoqda(true);
+    try {
+      const sorovNatijasi = await fetch("/api/buvi/maslahat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id, daraja }),
+      });
+      if (!sorovNatijasi.ok) throw new Error("server xatosi");
+      const { maslahat } = (await sorovNatijasi.json()) as { maslahat: string };
+      setMaslahatlar((oldingi) => [...oldingi, { daraja, matn: maslahat }]);
+    } catch {
+      // Maslahat kelmasa ham ilova qulamaydi — foydalanuvchi shunchaki
+      // yana urinishda davom etadi.
+    } finally {
+      setMaslahatYuklanmoqda(false);
+    }
+  }
+
   async function javobniYubor(hodisa: React.FormEvent) {
     hodisa.preventDefault();
     if (!topishmoq || !kiritilganJavob.trim() || tekshirilmoqda) return;
@@ -65,13 +102,47 @@ export default function BuviSahifa() {
       });
       if (!sorovNatijasi.ok) throw new Error("server xatosi");
       const { togri } = (await sorovNatijasi.json()) as { togri: boolean };
-      setNatija(togri ? "togri" : "notogri");
+
+      if (togri) {
+        setNatija("togri");
+        return;
+      }
+
+      setNatija("notogri");
+      setKiritilganJavob("");
+      const yangiNotogriSoni = notogriSoni + 1;
+      setNotogriSoni(yangiNotogriSoni);
+      if (yangiNotogriSoni <= ENG_KOP_MASLAHAT) {
+        await maslahatSora(topishmoq.id, yangiNotogriSoni as 1 | 2 | 3);
+      }
     } catch {
       setXato("Javobni tekshirib bo'lmadi. Birozdan keyin qayta urinib ko'ring.");
     } finally {
       setTekshirilmoqda(false);
     }
   }
+
+  async function javobniKorsat() {
+    if (!topishmoq || oshkorYuklanmoqda) return;
+    setOshkorYuklanmoqda(true);
+    try {
+      const sorovNatijasi = await fetch("/api/topishmoq/javob", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: topishmoq.id }),
+      });
+      if (!sorovNatijasi.ok) throw new Error("server xatosi");
+      const { javob } = (await sorovNatijasi.json()) as { javob: string };
+      setOshkorJavob(javob);
+      setOshkorQilingan(true);
+    } catch {
+      setXato("Javobni ko'rsatib bo'lmadi. Birozdan keyin qayta urinib ko'ring.");
+    } finally {
+      setOshkorYuklanmoqda(false);
+    }
+  }
+
+  const oynaTugadi = natija === "togri" || oshkorQilingan;
 
   return (
     <Sahifa sarlavha="AI-buvi suhbatlari">
@@ -88,28 +159,42 @@ export default function BuviSahifa() {
       )}
 
       {!yuklanmoqda && topishmoq && (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-3">
           <div className="rounded-2xl border border-buvi-matn/10 bg-buvi-fon p-5 text-buvi-matn">
             <p className="text-xs font-bold uppercase tracking-wide opacity-60">
               Buvijon aytadi
             </p>
-            <p className="mt-2 text-lg font-bold leading-snug">
-              {topishmoq.matn}
-            </p>
+            <p className="mt-2 text-lg font-bold leading-snug">{topishmoq.matn}</p>
           </div>
 
-          {natija === "togri" && (
-            <div className="rounded-2xl border border-natija-matn/10 bg-natija-fon p-4 text-natija-matn">
-              <p className="text-sm font-bold">
-                Barakalla! Javobingiz to'g'ri. 🎉
+          {maslahatlar.map((m, i) => (
+            <div
+              key={i}
+              className="rounded-2xl border border-nofaol-matn/15 bg-nofaol-fon p-4 text-nofaol-matn"
+            >
+              <p className="text-xs font-bold uppercase tracking-wide opacity-60">
+                {m.daraja}-maslahat
               </p>
+              <p className="mt-1 text-sm font-semibold">{m.matn}</p>
+            </div>
+          ))}
+
+          {maslahatYuklanmoqda && (
+            <div className="rounded-2xl border border-nofaol-matn/15 bg-nofaol-fon p-4 text-nofaol-matn">
+              <p className="text-sm font-semibold opacity-70">Buvijon maslahat o'ylamoqda...</p>
             </div>
           )}
 
-          {natija === "notogri" && (
+          {natija === "togri" && (
+            <div className="rounded-2xl border border-natija-matn/10 bg-natija-fon p-4 text-natija-matn">
+              <p className="text-sm font-bold">Barakalla! Javobingiz to'g'ri. 🎉</p>
+            </div>
+          )}
+
+          {oshkorQilingan && oshkorJavob && (
             <div className="rounded-2xl border border-nofaol-matn/15 bg-nofaol-fon p-4 text-nofaol-matn">
               <p className="text-sm font-semibold">
-                Hali unday emas, yana urinib ko'ring.
+                Javob: <span className="font-extrabold">{oshkorJavob}</span>
               </p>
             </div>
           )}
@@ -120,7 +205,7 @@ export default function BuviSahifa() {
             </div>
           )}
 
-          {natija !== "togri" && (
+          {!oynaTugadi && (
             <form onSubmit={javobniYubor} className="flex flex-col gap-2">
               <input
                 type="text"
@@ -137,6 +222,14 @@ export default function BuviSahifa() {
               >
                 {tekshirilmoqda ? "Tekshirilmoqda..." : "Tekshirish"}
               </button>
+              <button
+                type="button"
+                onClick={javobniKorsat}
+                disabled={oshkorYuklanmoqda}
+                className="karta-tap rounded-2xl border border-brend/10 bg-white px-4 py-2.5 text-xs font-bold text-brend/60 disabled:opacity-40"
+              >
+                {oshkorYuklanmoqda ? "Ko'rsatilmoqda..." : "Javobni ko'rsat"}
+              </button>
             </form>
           )}
 
@@ -145,7 +238,7 @@ export default function BuviSahifa() {
             onClick={() => yangiTopishmoqOl(topishmoq.id)}
             className="karta-tap rounded-2xl border border-brend/10 bg-white px-4 py-3 text-sm font-bold text-brend/70"
           >
-            {natija === "togri" ? "Keyingi topishmoq →" : "Boshqasini so'rash →"}
+            {oynaTugadi ? "Keyingi topishmoq →" : "Boshqasini so'rash →"}
           </button>
         </div>
       )}
