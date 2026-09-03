@@ -182,7 +182,10 @@ export default function BuviSahifa() {
   }
 
   const oynaTugadi = natija === "togri" || oshkorQilingan;
-  const urinishlarTugadi = notogriSoni >= ENG_KOP_MASLAHAT;
+  // 3-maslahatdan keyin ham (ya'ni ENG_KOP_MASLAHAT dan bitta ko'p noto'g'ri
+  // urinishdan keyin) urinish yopiladi — 3-maslahat chiqqan zahoti emas,
+  // foydalanuvchiga o'sha maslahat asosida yana bir marta urinish imkoni beriladi.
+  const urinishlarTugadi = notogriSoni > ENG_KOP_MASLAHAT;
 
   return (
     <Sahifa sarlavha="AI-buvi suhbatlari">
@@ -294,9 +297,9 @@ export default function BuviSahifa() {
                 type="button"
                 onClick={javobniKorsat}
                 disabled={oshkorYuklanmoqda}
-                className="karta-tap rounded-2xl border border-brend/10 bg-white px-4 py-2.5 text-xs font-bold text-brend/60 disabled:opacity-40"
+                className="karta-tap rounded-2xl border border-natija-matn/20 bg-natija-fon px-4 py-2.5 text-xs font-bold text-natija-matn disabled:opacity-40"
               >
-                {oshkorYuklanmoqda ? "Ko'rsatilmoqda..." : "Javobni ko'rsat"}
+                👁️ {oshkorYuklanmoqda ? "Ko'rsatilmoqda..." : "Javobni ko'rsat"}
               </button>
             </form>
           )}
