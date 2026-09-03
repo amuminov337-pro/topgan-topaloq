@@ -37,12 +37,11 @@
   --color-xato-fon: #fbe3e1;
   --color-xato-matn: #8a2416;
 
-  /* Bosqichma-bosqich maslahat — barchasi tillarang oilasidan, to'q
-     bronzadan boshlanib eng oxirida sof oltinga ("oshkoralik") qarab
-     yorishadi (dizayn istisnosi, ↑ izohga qarang) */
-  --color-maslahat1-fon: #7a4a12;
-  --color-maslahat1-matn: #fbeed7;
-  --color-maslahat2-fon: #c9862f;
+  /* Bosqichma-bosqich maslahat — uchala daraja ham bir xil sof oltin rangda
+     (dizayn istisnosi, ↑ izohga qarang) */
+  --color-maslahat1-fon: #e0a63e;
+  --color-maslahat1-matn: #3a2400;
+  --color-maslahat2-fon: #e0a63e;
   --color-maslahat2-matn: #3a2400;
   --color-maslahat3-fon: #e0a63e;
   --color-maslahat3-matn: #3a2400;
