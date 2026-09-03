@@ -3,7 +3,8 @@
 // F5: noto'g'ri javobdan keyin 3 bosqichli maslahat (toifa -> xususiyat ->
 //     deyarli oshkora), hech qachon javobni o'z ichiga olmaydi.
 // Shuningdek MASTER_PROMPT 2-bo'limidagi doimiy qoida: har bosqichda
-// "javobni ko'rsat" tugmasi bor — foydalanuvchi majburlanmaydi.
+// "javobni ko'rsat" tugmasi bor va u HECH QACHON bloklanmaydi — foydalanuvchi
+// majburlanmaydi. Urinishlar tugagach faqat javob KIRITISH paneli bloklanadi.
 // Madaniy izoh (F6) hali yo'q — keyingi bosqichda shu sahifaga qo'shiladi.
 "use client";
 
@@ -23,6 +24,14 @@ type MaslahatYozuvi = { daraja: 1 | 2 | 3; matn: string };
 
 const ENG_KOP_MASLAHAT = 3;
 
+/** Har maslahat darajasi uchun rang klasslari — to'q rangdan oltin
+ * oshkoralikka qarab tobora "ochiluvchi" uch bosqich. */
+const MASLAHAT_RANGI: Record<1 | 2 | 3, string> = {
+  1: "border-maslahat1-matn/20 bg-maslahat1-fon text-maslahat1-matn",
+  2: "border-maslahat2-matn/20 bg-maslahat2-fon text-maslahat2-matn",
+  3: "border-maslahat3-matn/20 bg-maslahat3-fon text-maslahat3-matn",
+};
+
 export default function BuviSahifa() {
   const [topishmoq, setTopishmoq] = useState<OchiqTopishmoq | null>(null);
   const [yuklanmoqda, setYuklanmoqda] = useState(true);
@@ -35,6 +44,8 @@ export default function BuviSahifa() {
   const [maslahatlar, setMaslahatlar] = useState<MaslahatYozuvi[]>([]);
   const [maslahatYuklanmoqda, setMaslahatYuklanmoqda] = useState(false);
 
+  const [togriJavobMatni, setTogriJavobMatni] = useState<string | null>(null);
+
   const [oshkorQilingan, setOshkorQilingan] = useState(false);
   const [oshkorJavob, setOshkorJavob] = useState<string | null>(null);
   const [oshkorYuklanmoqda, setOshkorYuklanmoqda] = useState(false);
@@ -46,6 +57,7 @@ export default function BuviSahifa() {
     setKiritilganJavob("");
     setNotogriSoni(0);
     setMaslahatlar([]);
+    setTogriJavobMatni(null);
     setOshkorQilingan(false);
     setOshkorJavob(null);
     try {
@@ -88,6 +100,24 @@ export default function BuviSahifa() {
     }
   }
 
+  /** Javob to'g'ri chiqqanda, tabriq paniga qo'shish uchun aniq javob
+   * matnini oladi (bu — foydalanuvchi allaqachon to'g'ri topgani uchun
+   * "javobni oshkor qilish" degani emas). */
+  async function togriJavobniOl(id: string) {
+    try {
+      const sorovNatijasi = await fetch("/api/topishmoq/javob", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id }),
+      });
+      if (!sorovNatijasi.ok) throw new Error("server xatosi");
+      const { javob } = (await sorovNatijasi.json()) as { javob: string };
+      setTogriJavobMatni(javob);
+    } catch {
+      // Ko'rsatib bo'lmasa ham muhim emas — tabrik matni baribir chiqadi.
+    }
+  }
+
   async function javobniYubor(hodisa: React.FormEvent) {
     hodisa.preventDefault();
     if (!topishmoq || !kiritilganJavob.trim() || tekshirilmoqda) return;
@@ -105,6 +135,7 @@ export default function BuviSahifa() {
 
       if (togri) {
         setNatija("togri");
+        await togriJavobniOl(topishmoq.id);
         return;
       }
 
@@ -143,6 +174,7 @@ export default function BuviSahifa() {
   }
 
   const oynaTugadi = natija === "togri" || oshkorQilingan;
+  const urinishlarTugadi = notogriSoni >= ENG_KOP_MASLAHAT;
 
   return (
     <Sahifa sarlavha="AI-buvi suhbatlari">
@@ -168,7 +200,7 @@ export default function BuviSahifa() {
           </div>
 
           {natija === "notogri" && (
-            <div className="rounded-2xl border border-nofaol-matn/15 bg-nofaol-fon p-4 text-nofaol-matn">
+            <div className="rounded-2xl border border-xato-matn/15 bg-xato-fon p-4 text-xato-matn">
               <p className="text-sm font-semibold">
                 Noto'g'ri javob, buvijon sizga qayta o'ylashga yordam beradi.
               </p>
@@ -178,9 +210,9 @@ export default function BuviSahifa() {
           {maslahatlar.map((m, i) => (
             <div
               key={i}
-              className="rounded-2xl border border-nofaol-matn/15 bg-nofaol-fon p-4 text-nofaol-matn"
+              className={`rounded-2xl border p-4 ${MASLAHAT_RANGI[m.daraja]}`}
             >
-              <p className="text-xs font-bold uppercase tracking-wide opacity-60">
+              <p className="text-xs font-bold uppercase tracking-wide opacity-70">
                 {m.daraja}-maslahat
               </p>
               <p className="mt-1 text-sm font-semibold">{m.matn}</p>
@@ -194,10 +226,10 @@ export default function BuviSahifa() {
           )}
 
           {natija === "notogri" &&
-            notogriSoni >= ENG_KOP_MASLAHAT &&
+            urinishlarTugadi &&
             !maslahatYuklanmoqda &&
             !oshkorQilingan && (
-              <div className="rounded-2xl border border-nofaol-matn/15 bg-nofaol-fon p-4 text-nofaol-matn">
+              <div className="rounded-2xl border border-xato-matn/15 bg-xato-fon p-4 text-xato-matn">
                 <p className="text-sm font-semibold">
                   Urinishlar soni tugadi. Javobni ko'rish uchun pastdagi tugmani bosing yoki
                   keyingi topishmoqqa o'ting.
@@ -208,11 +240,16 @@ export default function BuviSahifa() {
           {natija === "togri" && (
             <div className="rounded-2xl border border-natija-matn/10 bg-natija-fon p-4 text-natija-matn">
               <p className="text-sm font-bold">Barakalla! Javobingiz to'g'ri. 🎉</p>
+              {togriJavobMatni && (
+                <p className="mt-1 text-sm font-semibold">
+                  To'g'ri javob: {togriJavobMatni} edi.
+                </p>
+              )}
             </div>
           )}
 
           {oshkorQilingan && oshkorJavob && (
-            <div className="rounded-2xl border border-nofaol-matn/15 bg-nofaol-fon p-4 text-nofaol-matn">
+            <div className="rounded-2xl border border-natija-matn/10 bg-natija-fon p-4 text-natija-matn">
               <p className="text-sm font-semibold">
                 Javob: <span className="font-extrabold">{oshkorJavob}</span>
               </p>
@@ -231,13 +268,16 @@ export default function BuviSahifa() {
                 type="text"
                 value={kiritilganJavob}
                 onChange={(hodisa) => setKiritilganJavob(hodisa.target.value)}
-                placeholder="Javobingizni yozing..."
-                className="karta-tap rounded-2xl border border-brend/15 bg-white px-4 py-3 text-base font-semibold text-brend outline-none focus:border-brend/40"
+                placeholder={
+                  urinishlarTugadi ? "Urinishlar tugadi" : "Javobingizni yozing..."
+                }
+                disabled={urinishlarTugadi}
+                className="karta-tap rounded-2xl border border-brend/15 bg-white px-4 py-3 text-base font-semibold text-brend outline-none focus:border-brend/40 disabled:opacity-40"
                 autoFocus
               />
               <button
                 type="submit"
-                disabled={tekshirilmoqda || !kiritilganJavob.trim()}
+                disabled={tekshirilmoqda || urinishlarTugadi || !kiritilganJavob.trim()}
                 className="karta-tap rounded-2xl bg-brend px-4 py-3 text-sm font-extrabold text-white shadow-sm transition disabled:opacity-40"
               >
                 {tekshirilmoqda ? "Tekshirilmoqda..." : "Tekshirish"}

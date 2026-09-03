@@ -9,3 +9,11 @@
 | 2026-09-03 | F5 — AI-buvi: bosqichma-bosqich maslahat | 10 | ✅ | `lib/maslahat.ts` (Gemini + zaxira zanjiri, javob oshkor bo'lmasligi dasturiy tekshiriladi), `/api/buvi/maslahat`, `/api/topishmoq/javob` ("javobni ko'rsat" tugmasi uchun), `/buvi` sahifasiga integratsiya |
 
 **Jami:** 50 / 100 ball
+
+**Dizayn eslatmasi (2026-09-03):** Loyiha egasining aniq roziligi bilan,
+faqat dizaynga oid jihatlarda (ranglar) MASTER_PROMPT'ning qat'iy
+palitrasidan chetga chiqishga ruxsat berilgan — bu shaxsiy tashabbus
+sifatida belgilangan, boshqa qarorlarga (F tartibi, "Done when" shartlari,
+texnik stack) taalluqli emas. Shu asosda `/buvi` sahifasiga qizil (xato) va
+uch bosqichli maslahat (to'q ko'kdan oltinga) ranglari, havorang buvi paneli
+qo'shildi. Yoqmasa "avvalgi holatga qaytar" buyrug'i bilan bekor qilinadi.

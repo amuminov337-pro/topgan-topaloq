@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------
+   Topgan-topaloq — dizayn tizimi (MASTER_PROMPT 3-bo'lim)
+   Asosiy palitra MASTER_PROMPT'dagi qat'iy jadvalga mos. Loyiha egasining
+   aniq roziligi bilan (2026-09-03, shaxsiy tashabbus sifatida, faqat
+   dizaynga oid jihatlarda) uchta qo'shimcha maqsad uchun yangi tokenlar
+   qo'shilgan: xato holati (qizil) va uch bosqichli maslahat ranglari.
+   Yoqmasa, "avvalgi holatga qaytar" buyrug'i bilan bu qism bekor qilinadi.
+   --------------------------------------------------------------- */
+
+@theme {
+  /* Brend */
+  --color-brend: #1e2a57;
+  --color-oltin: #e0a63e;
+
+  /* Sahifa foni */
+  --color-sahifa: #faf8f3;
+
+  /* AI-buvi paneli — havo rang ko'k */
+  --color-buvi-fon: #d7f0fd;
+  --color-buvi-matn: #1e2a57;
+
+  /* O'zing yarat paneli — oltin */
+  --color-yarat-fon: #fbefda;
+  --color-yarat-matn: #a9761f;
+
+  /* Natijalar / to'g'ri javob — yashil */
+  --color-natija-fon: #eaf3de;
+  --color-natija-matn: #27500a;
+
+  /* Faol emas bo'limlar — kulrang */
+  --color-nofaol-fon: #f1efe8;
+  --color-nofaol-matn: #8b8a82;
+
+  /* Xato / noto'g'ri javob — qizil (dizayn istisnosi, ↑ izohga qarang) */
+  --color-xato-fon: #fbe3e1;
+  --color-xato-matn: #8a2416;
+
+  /* Bosqichma-bosqich maslahat — to'q rangdan oltin oshkoralikka qarab
+     tobora "ochiluvchi" uch bosqich (dizayn istisnosi, ↑ izohga qarang) */
+  --color-maslahat1-fon: #1e2a57;
+  --color-maslahat1-matn: #eef1f8;
+  --color-maslahat2-fon: #4a2f6b;
+  --color-maslahat2-matn: #f3eefa;
+  --color-maslahat3-fon: #e0a63e;
+  --color-maslahat3-matn: #3a2400;
+
+  --font-sans: "Nunito Variable", ui-sans-serif, system-ui, sans-serif;
+}
+
+html,
+body {
+  background: var(--color-sahifa);
+  color: var(--color-brend);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tugma va kartalarda matn tanlanishi o'yin his-tuyg'usini buzmasin */
+.karta-tap {
+  -webkit-tap-highlight-color: transparent;
+}
