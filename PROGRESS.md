@@ -12,8 +12,9 @@
 | 2026-09-03 | F8 — Natijalar paneli | 8 | ✅ | `lib/saqlash.ts` (localStorage, dublikatsiz), `components/NatijaHolati.tsx` (bosh sahifadagi yashil panelni to'ldiradi), `/natijalar` sahifasi (to'liq tarix), `/buvi`da to'g'ri topilgan javob avtomatik saqlanadi — sahifa qayta yuklangandan keyin ham son va chiplar saqlanib qoladi |
 | 2026-09-03 | F9 — Dastur haqida sahifasi | 5 | ✅ | `/haqida` sahifasida maqsad, texnologiya, manba (M. Abdurahimov "O'zbek xalq topishmoqlari" to'plami — korpusdagi haqiqiy `manba` maydoniga mos) va muallif ma'lumoti |
 | 2026-09-03 | F10 — Kelajak bo'limlari | 3 | ✅ | `components/KelajakKartalari.tsx` — "Jumboqlar xaritasi" va "Topishmoq dueli" kartalari bosilganda tegishli tushuntirish modali chiqadi (kulrang, "Tez orada" holatida qoladi) |
+| 2026-09-03 | F11 — Mobil moslashuv va PWA | 7 | ✅ | `public/manifest.json` (nom, ranglar, 192/512px ikonkalar), `app/icon.png` + `app/apple-icon.png` + `public/icon-192.png` + `public/icon-512.png` + `app/favicon.ico` (brend chirog'i logotipidan), `public/sw.js` (asosiy sahifalarni keshlaydi, `/api/` so'rovlariga tegmaydi) + `components/SwRoyxatga.tsx` orqali ro'yxatdan o'tkaziladi, `app/layout.tsx`ga manifest/appleWebApp/themeColor qo'shildi. 375/768/1440px'da responsivlik Playwright orqali tekshirildi, service worker Playwright'da "activated" holatida ro'yxatdan o'tgani tasdiqlandi |
 
-**Jami:** 86 / 100 ball
+**Jami:** 93 / 100 ball
 
 **Bugfix (2026-09-03):** `lib/ikonka.ts`dagi 2020-2021 (Unicode 13-14) davrida qo'shilgan 17 ta emoji (igna va h.k.) ba'zi Windows qurilmalarida bo'sh katakcha bo'lib ko'rinishi aniqlandi — barchasi eskiroq, keng qo'llab-quvvatlanadigan muqobillarga almashtirildi.
 
