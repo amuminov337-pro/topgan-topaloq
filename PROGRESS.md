@@ -10,8 +10,12 @@
 | 2026-09-03 | F6 — AI-buvi: madaniy izoh va javob ikonkasi | 8 | ✅ | `lib/izoh.ts` (Gemini + 17 toifaga mos zaxira izoh zanjiri), `lib/ikonka.ts` (161 ta korpus ikonkasi uchun emoji jadvali), `/api/buvi/izoh`, to'g'ri javobdan keyin ikonka + 2-3 gaplik madaniy izoh `/buvi` sahifasida (shuningdek "javobni ko'rsat" orqali topganda ham) |
 | 2026-09-03 | F7 — O'zing yarat: kiritish va AI baholash | 12 | ✅ | `lib/baho.ts` (Gemini qat'iy JSON formatda + har doim ijobiy zaxira baho), `/api/baho`, `/yarat` sahifasida topishmoq+javob kiritish, uch mezon (metafora/ixchamlik/ohang) bo'yicha ijobiy fikr va bitta taklif, bo'sh maydonda inline xato |
 | 2026-09-03 | F8 — Natijalar paneli | 8 | ✅ | `lib/saqlash.ts` (localStorage, dublikatsiz), `components/NatijaHolati.tsx` (bosh sahifadagi yashil panelni to'ldiradi), `/natijalar` sahifasi (to'liq tarix), `/buvi`da to'g'ri topilgan javob avtomatik saqlanadi — sahifa qayta yuklangandan keyin ham son va chiplar saqlanib qoladi |
+| 2026-09-03 | F9 — Dastur haqida sahifasi | 5 | ✅ | `/haqida` sahifasida maqsad, texnologiya, manba (M. Abdurahimov "O'zbek xalq topishmoqlari" to'plami — korpusdagi haqiqiy `manba` maydoniga mos) va muallif ma'lumoti |
+| 2026-09-03 | F10 — Kelajak bo'limlari | 3 | ✅ | `components/KelajakKartalari.tsx` — "Jumboqlar xaritasi" va "Topishmoq dueli" kartalari bosilganda tegishli tushuntirish modali chiqadi (kulrang, "Tez orada" holatida qoladi) |
 
-**Jami:** 78 / 100 ball
+**Jami:** 86 / 100 ball
+
+**Bugfix (2026-09-03):** `lib/ikonka.ts`dagi 2020-2021 (Unicode 13-14) davrida qo'shilgan 17 ta emoji (igna va h.k.) ba'zi Windows qurilmalarida bo'sh katakcha bo'lib ko'rinishi aniqlandi — barchasi eskiroq, keng qo'llab-quvvatlanadigan muqobillarga almashtirildi.
 
 **Dizayn eslatmasi (2026-09-03):** Loyiha egasining aniq roziligi bilan,
 faqat dizaynga oid jihatlarda (ranglar) MASTER_PROMPT'ning qat'iy
