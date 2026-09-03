@@ -56,6 +56,25 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Planshet va kompyuterda ilova endi ekran markazida turgan "qurilma"
+   ko'rinishidagi oq kartaga o'raladi (main'dagi sm:/lg: klasslariga qarang) —
+   atrofidagi bo'shliq ataylab biroz to'qroq fonda ko'rsatilib, ilova
+   ekranni behuda bo'sh qoldirmaydi. Telefonda (640px dan kichik) hech narsa
+   o'zgarmaydi — asl mobil-birinchi maket saqlanadi. (Dizayn istisnosi,
+   yuqoridagi izohga qarang.) */
+@media (min-width: 640px) {
+  html,
+  body {
+    background: #efe9dc;
+  }
+
+  body {
+    display: flex;
+    min-height: 100dvh;
+    align-items: flex-start;
+  }
+}
+
 /* Tugma va kartalarda matn tanlanishi o'yin his-tuyg'usini buzmasin */
 .karta-tap {
   -webkit-tap-highlight-color: transparent;

@@ -12,7 +12,7 @@ import NatijaHolati from "@/components/NatijaHolati";
 
 export default function BoshSahifa() {
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-5 px-4 pb-10 pt-8">
+    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-5 px-4 pb-10 pt-8 sm:my-8 sm:min-h-0 sm:max-w-xl sm:gap-6 sm:rounded-3xl sm:border sm:border-brend/10 sm:bg-white sm:px-8 sm:pb-12 sm:pt-10 sm:shadow-xl lg:max-w-2xl lg:gap-7 lg:px-12 lg:pb-14 lg:pt-12">
       <header className="flex flex-col items-center gap-2 text-center">
         <Logotip olcham={76} />
         <h1 className="text-3xl font-extrabold tracking-tight text-brend">

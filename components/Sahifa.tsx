@@ -12,7 +12,7 @@ export default function Sahifa({
   children: ReactNode;
 }) {
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-4 px-4 pb-10 pt-6">
+    <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col gap-4 px-4 pb-10 pt-6 sm:my-8 sm:min-h-0 sm:max-w-xl sm:gap-5 sm:rounded-3xl sm:border sm:border-brend/10 sm:bg-white sm:px-8 sm:pb-12 sm:pt-8 sm:shadow-xl lg:max-w-2xl lg:px-12 lg:pb-14 lg:pt-10">
       <div className="flex items-center gap-3">
         <Link
           href="/"
