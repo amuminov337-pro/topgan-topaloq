@@ -7,14 +7,18 @@
 
 import { GoogleGenAI } from "@google/genai";
 
-const API_KALIT = process.env.GEMINI_API_KEY;
+// GOOGLE_API_KEY — @google/genai kutubxonasining o'zi tan oladigan rasmiy nom
+// (https://github.com/googleapis/js-genai). Shu nomni ishlatamiz, boshqa nom
+// o'ylab topmaymiz — kelajakda kutubxona konstruktorga kalit uzatmasdan ham
+// avtomatik shu o'zgaruvchini o'qishi mumkin.
+const API_KALIT = process.env.GOOGLE_API_KEY;
 const MODEL_NOMI = process.env.GEMINI_MODEL || "gemini-3.1-flash-lite";
 
 let mijoz: GoogleGenAI | null = null;
 
 function mijozniOl(): GoogleGenAI {
   if (!API_KALIT) {
-    throw new Error("GEMINI_API_KEY sozlanmagan");
+    throw new Error("GOOGLE_API_KEY sozlanmagan");
   }
   if (!mijoz) {
     mijoz = new GoogleGenAI({ apiKey: API_KALIT });
@@ -38,7 +42,7 @@ export async function geminiSorov(
   if (!API_KALIT) {
     return {
       ok: false,
-      xabar: "GEMINI_API_KEY .env.local faylida sozlanmagan.",
+      xabar: "GOOGLE_API_KEY .env.local faylida sozlanmagan.",
     };
   }
 

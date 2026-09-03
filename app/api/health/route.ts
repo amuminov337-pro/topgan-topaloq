@@ -12,7 +12,7 @@ export async function GET() {
     return NextResponse.json({
       ok: false,
       model,
-      xato: "GEMINI_API_KEY .env.local faylida sozlanmagan.",
+      xato: "GOOGLE_API_KEY .env.local faylida sozlanmagan.",
     });
   }
 
