@@ -17,6 +17,8 @@
 
 **Jami:** 100 / 100 ball 🎉
 
+**Yakuniy tasdiq (2026-09-03):** Loyiha egasi jonli havolani (`topgan-topaloq-sand.vercel.app`) o'z telefonida sinab, "Bosh ekranga qo'shish" va to'liq ekranli ochilishni tasdiqladi — F12 "Done when" sharti to'liq bajarildi. F1 → F12 barcha bosqichlar yakunlandi.
+
 **Bugfix (2026-09-03, F11):** `lib/ikonka.ts`dagi 2020-2021 (Unicode 13-14) davrida qo'shilgan 17 ta emoji (igna va h.k.) ba'zi Windows qurilmalarida bo'sh katakcha bo'lib ko'rinishi aniqlandi — barchasi eskiroq, keng qo'llab-quvvatlanadigan muqobillarga almashtirildi.
 
 **Bugfix (2026-09-03, F12):** Vercel build'da 58 ta "Module not found" xatosi chiqdi — sababi `tsconfig.json`, `next.config.ts`, `postcss.config.mjs`, `.gitignore` va uchta komponent fayli (`Logotip.tsx`, `NatijaPanel.tsx`, `Sahifa.tsx`) F1'dan beri hech qachon `git add` qilinmagani (har feature uchun faqat o'sha feature fayllari qo'shilgani sababli asosiy skelet fayllari e'tibordan chetda qolgan). Barcha fayllar qo'shilib, qayta push qilingandan keyin deploy muvaffaqiyatli o'tdi.
