@@ -13,10 +13,13 @@
 | 2026-09-03 | F9 — Dastur haqida sahifasi | 5 | ✅ | `/haqida` sahifasida maqsad, texnologiya, manba (M. Abdurahimov "O'zbek xalq topishmoqlari" to'plami — korpusdagi haqiqiy `manba` maydoniga mos) va muallif ma'lumoti |
 | 2026-09-03 | F10 — Kelajak bo'limlari | 3 | ✅ | `components/KelajakKartalari.tsx` — "Jumboqlar xaritasi" va "Topishmoq dueli" kartalari bosilganda tegishli tushuntirish modali chiqadi (kulrang, "Tez orada" holatida qoladi) |
 | 2026-09-03 | F11 — Mobil moslashuv va PWA | 7 | ✅ | `public/manifest.json` (nom, ranglar, 192/512px ikonkalar), `app/icon.png` + `app/apple-icon.png` + `public/icon-192.png` + `public/icon-512.png` + `app/favicon.ico` (brend chirog'i logotipidan), `public/sw.js` (asosiy sahifalarni keshlaydi, `/api/` so'rovlariga tegmaydi) + `components/SwRoyxatga.tsx` orqali ro'yxatdan o'tkaziladi, `app/layout.tsx`ga manifest/appleWebApp/themeColor qo'shildi. 375/768/1440px'da responsivlik Playwright orqali tekshirildi, service worker Playwright'da "activated" holatida ro'yxatdan o'tgani tasdiqlandi |
+| 2026-09-03 | F12 — Vercel deploy va yakuniy sinov | 7 | ✅ | Loyiha Vercel'ga deploy qilindi (`topgan-topaloq-sand.vercel.app`), `GOOGLE_API_KEY` muhit o'zgaruvchisi sozlandi. Jonli havolada real Gemini bilan to'liq oqim tekshirildi: AI-buvi (xato javob → maslahat → "javobni ko'rsat" → javob + madaniy izoh) va O'zing yarat (topishmoq+javob → uch mezon bo'yicha AI fikri + taklif) — barchasi ishladi, brauzer konsolida xato yo'q, `/manifest.json` to'g'ri xizmat qilyapti |
 
-**Jami:** 93 / 100 ball
+**Jami:** 100 / 100 ball 🎉
 
-**Bugfix (2026-09-03):** `lib/ikonka.ts`dagi 2020-2021 (Unicode 13-14) davrida qo'shilgan 17 ta emoji (igna va h.k.) ba'zi Windows qurilmalarida bo'sh katakcha bo'lib ko'rinishi aniqlandi — barchasi eskiroq, keng qo'llab-quvvatlanadigan muqobillarga almashtirildi.
+**Bugfix (2026-09-03, F11):** `lib/ikonka.ts`dagi 2020-2021 (Unicode 13-14) davrida qo'shilgan 17 ta emoji (igna va h.k.) ba'zi Windows qurilmalarida bo'sh katakcha bo'lib ko'rinishi aniqlandi — barchasi eskiroq, keng qo'llab-quvvatlanadigan muqobillarga almashtirildi.
+
+**Bugfix (2026-09-03, F12):** Vercel build'da 58 ta "Module not found" xatosi chiqdi — sababi `tsconfig.json`, `next.config.ts`, `postcss.config.mjs`, `.gitignore` va uchta komponent fayli (`Logotip.tsx`, `NatijaPanel.tsx`, `Sahifa.tsx`) F1'dan beri hech qachon `git add` qilinmagani (har feature uchun faqat o'sha feature fayllari qo'shilgani sababli asosiy skelet fayllari e'tibordan chetda qolgan). Barcha fayllar qo'shilib, qayta push qilingandan keyin deploy muvaffaqiyatli o'tdi.
 
 **Dizayn eslatmasi (2026-09-03):** Loyiha egasining aniq roziligi bilan,
 faqat dizaynga oid jihatlarda (ranglar) MASTER_PROMPT'ning qat'iy
