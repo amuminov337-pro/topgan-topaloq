@@ -167,6 +167,14 @@ export default function BuviSahifa() {
             <p className="mt-2 text-lg font-bold leading-snug">{topishmoq.matn}</p>
           </div>
 
+          {natija === "notogri" && (
+            <div className="rounded-2xl border border-nofaol-matn/15 bg-nofaol-fon p-4 text-nofaol-matn">
+              <p className="text-sm font-semibold">
+                Noto'g'ri javob, buvijon sizga qayta o'ylashga yordam beradi.
+              </p>
+            </div>
+          )}
+
           {maslahatlar.map((m, i) => (
             <div
               key={i}
@@ -184,6 +192,18 @@ export default function BuviSahifa() {
               <p className="text-sm font-semibold opacity-70">Buvijon maslahat o'ylamoqda...</p>
             </div>
           )}
+
+          {natija === "notogri" &&
+            notogriSoni >= ENG_KOP_MASLAHAT &&
+            !maslahatYuklanmoqda &&
+            !oshkorQilingan && (
+              <div className="rounded-2xl border border-nofaol-matn/15 bg-nofaol-fon p-4 text-nofaol-matn">
+                <p className="text-sm font-semibold">
+                  Urinishlar soni tugadi. Javobni ko'rish uchun pastdagi tugmani bosing yoki
+                  keyingi topishmoqqa o'ting.
+                </p>
+              </div>
+            )}
 
           {natija === "togri" && (
             <div className="rounded-2xl border border-natija-matn/10 bg-natija-fon p-4 text-natija-matn">
