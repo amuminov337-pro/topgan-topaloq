@@ -65,7 +65,13 @@ function javobOshkorQilinganmi(matn: string, taqiqlanganShakllar: string[]): boo
 const DARAJA_YONALISHI: Record<MaslahatDarajasi, string> = {
   1: "Faqat UMUMIY TOIFANI ayt — bu qanday narsalar turkumiga oid ekanini (masalan hayvonmi, uy buyumimi, tabiat hodisasimi). Juda umumiy bo'lsin.",
   2: "Endi javobning XUSUSIYATINI ayt — u qanday ko'rinishda, nima uchun ishlatiladi yoki qachon kerak bo'lishi haqida bitta aniqroq belgi ber.",
-  3: "Endi DEYARLI OSHKORA maslahat ber — javobga juda yaqin, kuchli bir ishora ber, lekin baribir javobning o'zini yoki sinonimlarini aytma.",
+  3:
+    "Endi DEYARLI OSHKORA maslahat ber. MUHIM: bu shunchaki toifaning umumiy tavsifi " +
+    "bo'lmasin (masalan \"yong'oq kabi qattiq po'stli, mag'zi yeyiladi\" — bu juda ko'p " +
+    "narsaga to'g'ri keladi, foydasiz). Buning o'rniga aynan SHU JAVOBNI o'xshash " +
+    "narsalardan (bir xil toifadagi boshqa javoblardan) FARQLAB beradigan, faqat unga xos " +
+    "bitta aniq belgini ayt (masalan uning o'ziga xos shakli, rangi, ta'mi, hidi, ishlatilish " +
+    "o'rni yoki mashhur nomi). Baribir javobning o'zini yoki sinonimlarini aytma.",
 };
 
 /**
