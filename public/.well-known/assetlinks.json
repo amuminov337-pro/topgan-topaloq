@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.vercel.topgan_topaloq_sand.twa",
+        "sha256_cert_fingerprints": ["25:DF:B1:8C:31:61:4C:BC:7D:D3:FE:97:C6:F3:DB:A2:F5:8F:FA:8C:51:2D:C0:32:24:6A:D0:2D:23:B4:91:2A"]
+      }
+    }]

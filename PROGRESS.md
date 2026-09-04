@@ -97,6 +97,34 @@ va o'rniga **"Hikmat yo'li"** — tarixiy-adabiy sayohat xaritasi — qurildi.
 - Bu ham F1→F12 (100 ball) rejasidan tashqari, alohida so'ralgan qo'shimcha
   ish — yakuniy ball hisobiga ta'sir qilmaydi.
 
+**Qo'shimcha ish — Android ilova (TWA/APK) (2026-09-04, MASTER_PROMPT F1→F12 dan tashqari):**
+Veb-sahifa (`topgan-topaloq-sand.vercel.app`) o'zgarishsiz, alohida jonli holda
+qoladi — loyiha egasining aniq talabiga ko'ra ("veb sahifa ham saqlab
+qolinsin, ilova alohida"). Android ilovasi PWABuilder.com orqali TWA
+(Trusted Web Activity) usulida, veb-sahifani o'zgartirmasdan "o'rab"
+yasaldi — bu ma'noda alohida kodlash ishi qilinmadi, faqat quyidagi bitta
+fayl loyihaga qo'shildi:
+- `public/.well-known/assetlinks.json` — Google tomonidan talab qilinadigan
+  "Digital Asset Links" fayli. Bu fayl PWA'ning saytga tegishli ekanini
+  Android'ga isbotlaydi; aks holda ilova ochilganda brauzer manzil satri
+  ko'rinib qoladi. PWABuilder paketlash jarayonida imzolash kaliti bilan
+  birga avtomatik yaratildi.
+- Imzolash kaliti (signing key): loyiha egasi bilan kelishilgan holda,
+  PWABuilder o'zi yangi kalit yaratdi ("New" — Play Store'ga birinchi marta
+  chiqarish uchun tavsiya etilgan usul). Yaratilgan `signing.keystore` va
+  `signing-key-info.txt` fayllari **repozitoriyga qo'shilmaydi** — loyiha
+  egasida alohida saqlanmoqda (kelajakda ilovani yangilash uchun zarur,
+  yo'qolsa Play Store'da yangi versiyani chiqarib bo'lmaydi).
+- PWABuilder paketi tarkibida ham `.apk` (sinov uchun to'g'ridan-to'g'ri
+  o'rnatiladigan), ham `.aab` (Google Play Console'ga yuklash uchun Android
+  App Bundle) fayllari bor.
+- `assetlinks.json` `public/.well-known/` papkasiga joylashtirilgandan
+  keyin, Next.js orqali `application/json` turi bilan to'g'ri xizmat
+  qilishi lokal build+start orqali tasdiqlandi.
+- Bu ish F1→F12 (100 ball) rejasidan ham, F13/F14 qo'shimcha
+  funksiyalaridan ham tashqari — veb-ilovani boshqa formatga (Android)
+  ko'chirish, kontentga yoki ballga ta'sir qilmaydi.
+
 **Dizayn eslatmasi (2026-09-03):** Loyiha egasining aniq roziligi bilan,
 faqat dizaynga oid jihatlarda (ranglar) MASTER_PROMPT'ning qat'iy
 palitrasidan chetga chiqishga ruxsat berilgan — bu shaxsiy tashabbus
