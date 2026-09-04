@@ -49,6 +49,50 @@ martadan almashadi, oxirida ko'proq ball yig'gan g'olib bo'ladi.
 - Bu F1→F12 (100 ball) rejasidan tashqari, alohida so'ralgan qo'shimcha ish —
   yakuniy ball hisobiga ta'sir qilmaydi.
 
+**Qo'shimcha funksiya — F14: Jumboqlar xaritasi (2026-09-04, MASTER_PROMPT F1→F12 dan tashqari):**
+F10'da "Tez orada" deb belgilangan ikkinchi bo'lim ham endi ishlaydi: 6 ta
+davlat (Rossiya, Xitoy, Yaponiya, Fransiya, Misr, AQSH), jami 74 ta haqiqiy
+xalq topishmog'i bilan.
+- **Manba tekshiruvi:** har bir topishmoq internetdan (ikkita general-purpose
+  agent orqali, parallel) topilgan, aniq manba bilan yozib qo'yilgan, so'ng
+  men mustaqil ravishda 4 ta eng noyob manbani (Littmann 1937, Rolland 1877,
+  1516-yilgi yapon «Gonaraiin gyosen nazo» to'plami, Chyet 1988) WebSearch
+  orqali qayta tekshirib, barchasi haqiqiy ekanini tasdiqladim. Yaponiya
+  bo'yicha ochiq eslatma: faqat 1-2 tasi chinakam qadimiy manbali, qolgani —
+  hozirgi yapon bolalar bog'chalarida keng qo'llaniladigan, bir nechta
+  mustaqil ta'lim saytida tasdiqlangan zamonaviy xalq topishmoqlari (tarjimaga
+  chidamaydigan an'anaviy tovush-o'yiniga asoslangan topishmoqlar ataylab
+  olinmadi). Misr bo'yicha: yagona ishonchli ilmiy manbada (Littmann) atigi
+  8 ta oilaviy mos topishmoq bor edi — 10 taga to'ldirish uchun ishonchsiz
+  manbalardan foydalanish o'rniga, foydalanuvchi bilan kelishilgan holda
+  8 tasi bilan qoldirildi (keyinchalik yangi manba topilsa to'ldiriladi).
+- **O'yin mexanikasi (foydalanuvchi talabiga ko'ra):** 1-urinish oddiy;
+  1-xato → javob necha harf bo'lsa, shuncha bo'sh katakcha ko'rsatiladi;
+  2-xato → birinchi harf ochiladi; 3-xato → oxirgi harf ham ochiladi;
+  4-xato → to'liq javob avtomatik ko'rsatiladi. Bundan tashqari, loyihaning
+  doimiy qoidasiga ko'ra, "👁️ Javobni ko'rsat" tugmasi urinish sonidan
+  qat'iy nazar har doim mavjud va hech qachon bloklanmaydi.
+- **Sovg'a tizimi:** MASTER_PROMPT'ning "Coin/tanga tizimi qo'shilmaydi"
+  qat'iy qoidasi bilan to'qnashmasligi uchun (foydalanuvchi bilan
+  AskUserQuestion orqali kelishib olindi) — cheksiz to'planadigan tanga
+  o'rniga, har bir davlatning FAQAT ilk chindan (oshkor qilinmagan) to'g'ri
+  javobida o'sha davlatga xos bitta noyob "sayohat albomi" suveniri ochiladi
+  (masalan Yaponiya — 🎎, Fransiya — 🗼). Keyingi to'g'ri javoblar takroriy
+  sovg'a bermaydi. `lib/sovinir.ts` orqali localStorage'da saqlanadi.
+- **Xarita ko'rinishi:** MASTER_PROMPT "interaktiv xarita" deb tasvirlagan
+  edi, lekin haqiqiy siyosiy xarita mobil ekranda barmoq bilan aniq bosib
+  bo'lmaydi (kichik davlatlar juda mayda chiqadi) — shuning uchun bayroq+nom
+  bilan, qit'alar bo'yicha guruhlangan karta-grid tanlandi (dizayn qarori).
+- **Xavfsizlik:** `lib/dunyo.ts` (javoblar bilan) faqat server tomonda
+  ishlaydi — build qilingandan keyin klient JS bundle'ida hech qanday javob
+  yo'qligi qo'lda tekshirildi (grep orqali).
+- Playwright orqali to'liq oqim tekshirildi: davlat tanlash, 4 bosqichli
+  maslahat progressiyasi, suvenir birinchi marta ochilishi va ikkinchi marta
+  takrorlanmasligi (localStorage orqali sahifalar aro saqlangani bilan), va
+  375/768/1440px'da responsivlik — konsolida xato yo'q.
+- Bu ham F1→F12 (100 ball) rejasidan tashqari, alohida so'ralgan qo'shimcha
+  ish — yakuniy ball hisobiga ta'sir qilmaydi.
+
 **Dizayn eslatmasi (2026-09-03):** Loyiha egasining aniq roziligi bilan,
 faqat dizaynga oid jihatlarda (ranglar) MASTER_PROMPT'ning qat'iy
 palitrasidan chetga chiqishga ruxsat berilgan — bu shaxsiy tashabbus

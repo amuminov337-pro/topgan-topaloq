@@ -1,14 +1,15 @@
-// Bosh sahifa — MASTER_PROMPT 3-bo'limidagi maket: sarlavha, 2 ta faol karta,
-// 2 ta "Tez orada" kartasi, 2 ta ikkilamchi karta va yashil natijalar paneli.
+// Bosh sahifa — MASTER_PROMPT 3-bo'limidagi maketga asoslangan: sarlavha,
+// asosiy kartalar, 2 ta ikkilamchi karta va yashil natijalar paneli.
 // F8: natijalar paneli endi localStorage'dan (NatijaHolati orqali) keladi.
-// F10: "Tez orada" kartasi (Jumboqlar xaritasi) bosilganda tushuntirish
-// modali ko'rsatadi (KelajakKartalari orqali) — shu karta uchun "use client"
-// mantig'i izolyatsiya qilingan, sahifaning o'zi server komponent bo'lib qolaveradi.
-// F13 (MVP dan tashqari qo'shimcha funksiya): "Topishmoq dueli" endi kulrang
-// emas — /duel sahifasiga olib boruvchi oddiy faol karta.
+// F13 (MVP dan tashqari qo'shimcha funksiya): "Topishmoq dueli" — /duel
+// sahifasiga olib boruvchi faol karta.
+// F14 (MVP dan tashqari qo'shimcha funksiya): "Jumboqlar xaritasi" ham endi
+// faol — /xarita sahifasiga olib boradi. F10'da ikkalasi ham "Tez orada"
+// kulrang holatida edi (KelajakKartalari komponenti orqali); ikkalasi ham
+// endi haqiqiy feature bo'lgani uchun o'sha komponent bu sahifada
+// ishlatilmaydi (fayl o'chirildi).
 
 import BolimKarta from "@/components/BolimKarta";
-import KelajakKartalari from "@/components/KelajakKartalari";
 import Logotip from "@/components/Logotip";
 import NatijaHolati from "@/components/NatijaHolati";
 
@@ -41,7 +42,13 @@ export default function BoshSahifa() {
           href="/yarat"
         />
 
-        <KelajakKartalari />
+        <BolimKarta
+          sarlavha="Jumboqlar xaritasi"
+          tavsif="Dunyo bo'ylab topishmoq safari"
+          ikonka="🗺️"
+          ohang="ikkilamchi"
+          href="/xarita"
+        />
         <BolimKarta
           sarlavha="Topishmoq dueli"
           tavsif="AI bilan ball uchun bellashing"
