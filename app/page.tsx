@@ -1,9 +1,11 @@
 // Bosh sahifa — MASTER_PROMPT 3-bo'limidagi maket: sarlavha, 2 ta faol karta,
 // 2 ta "Tez orada" kartasi, 2 ta ikkilamchi karta va yashil natijalar paneli.
 // F8: natijalar paneli endi localStorage'dan (NatijaHolati orqali) keladi.
-// F10: "Tez orada" kartalari endi bosilganda tushuntirish modali ko'rsatadi
-// (KelajakKartalari orqali) — shu ikkita karta uchun "use client" mantig'i
-// izolyatsiya qilingan, sahifaning o'zi server komponent bo'lib qolaveradi.
+// F10: "Tez orada" kartasi (Jumboqlar xaritasi) bosilganda tushuntirish
+// modali ko'rsatadi (KelajakKartalari orqali) — shu karta uchun "use client"
+// mantig'i izolyatsiya qilingan, sahifaning o'zi server komponent bo'lib qolaveradi.
+// F13 (MVP dan tashqari qo'shimcha funksiya): "Topishmoq dueli" endi kulrang
+// emas — /duel sahifasiga olib boruvchi oddiy faol karta.
 
 import BolimKarta from "@/components/BolimKarta";
 import KelajakKartalari from "@/components/KelajakKartalari";
@@ -40,6 +42,13 @@ export default function BoshSahifa() {
         />
 
         <KelajakKartalari />
+        <BolimKarta
+          sarlavha="Topishmoq dueli"
+          tavsif="AI bilan ball uchun bellashing"
+          ikonka="⚔️"
+          ohang="ikkilamchi"
+          href="/duel"
+        />
 
         <BolimKarta
           sarlavha="Dastur haqida"

@@ -25,6 +25,30 @@
 
 **Korpus auditi (2026-09-03):** Foydalanuvchi t133 topishmog'ida ("Kichkina filday...") mantiqsiz o'xshatish payqagach, barcha 170 ta topishmoq asl manba (`M.Abdurahimov (tuzuvchi). O'zbek topishmoqlari.md`) bilan qatordan-qator solishtirildi. Yana 3 ta transliteratsiya xatosi topildi va tuzatildi: **t164** (magnitafon) — "Joni bor" manbada aslida "Jonsiz" (ma'no teskari chiqqan edi); **t043** (sichqon) — "ezinam" (mavjud bo'lmagan so'z) manbada "yeznam" (qaynog'a, shevaviy so'z); **t023** (tish) — "o'ra" manbada "oxurcha" (em-xashak idishi). Qolgan 166 ta yozuv manbaga to'liq mos ekani tasdiqlandi.
 
+**Qo'shimcha funksiya — F13: Topishmoq dueli (2026-09-04, MASTER_PROMPT F1→F12 dan tashqari):**
+Loyiha egasining aniq talabiga ko'ra, F10'da "Tez orada" deb belgilangan ikkita
+bo'limdan biri — **Topishmoq dueli** — endi to'liq ishlaydi ("Jumboqlar
+xaritasi" hamon rejadagidek kulrang qolmoqda). 6 bosqichli, ball asosidagi
+duel: navbat "AI savol beradi" / "Foydalanuvchi savol beradi" tarzida 3
+martadan almashadi, oxirida ko'proq ball yig'gan g'olib bo'ladi.
+- AI navbatida savol `data/topishmoqlar.json` korpusidan olinadi, mavjud
+  javob tekshirish mantig'i bilan baholanadi (`/api/javob-tekshir`).
+- Foydalanuvchi navbatida u ISTALGAN topishmoqni yozadi (korpusda bo'lishi
+  shart emas) — yangi `lib/duel.ts` + `/api/duel/model-taxmin` orqali Gemini
+  bu topishmoqqa korpusdan emas, o'z umumiy bilimidan foydalanib taxmin
+  qiladi. Bu topishmoqning haqiqiy javobi ilovada saqlanmagani uchun,
+  taxmin to'g'ri/noto'g'riligini foydalanuvchining o'zi hakamlik qilib
+  belgilaydi. Gemini ishlamasa (kalit yo'q/kvota tugagan), bosqich
+  avtomatik foydalanuvchi foydasiga hisoblanadi — ilova bu yerda ham qulamaydi.
+- Duel natijalari hozircha umumiy "Natijalar" paneliga qo'shilmaydi (u yerdagi
+  sxema g'alaba/mag'lubiyat tushunchasiga mos kelmaydi) — bu ataylab qilingan
+  qaror, kelajakda kengaytirilishi mumkin.
+- Playwright orqali to'liq 6 bosqichli o'yin (yutuq/yutqizish/durang holatlari,
+  "Yana o'ynash" bilan qayta boshlash) va 375/768/1440px'da responsivlik
+  tekshirildi — konsolida xato yo'q.
+- Bu F1→F12 (100 ball) rejasidan tashqari, alohida so'ralgan qo'shimcha ish —
+  yakuniy ball hisobiga ta'sir qilmaydi.
+
 **Dizayn eslatmasi (2026-09-03):** Loyiha egasining aniq roziligi bilan,
 faqat dizaynga oid jihatlarda (ranglar) MASTER_PROMPT'ning qat'iy
 palitrasidan chetga chiqishga ruxsat berilgan — bu shaxsiy tashabbus
