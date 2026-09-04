@@ -49,47 +49,51 @@ martadan almashadi, oxirida ko'proq ball yig'gan g'olib bo'ladi.
 - Bu F1→F12 (100 ball) rejasidan tashqari, alohida so'ralgan qo'shimcha ish —
   yakuniy ball hisobiga ta'sir qilmaydi.
 
-**Qo'shimcha funksiya — F14: Jumboqlar xaritasi (2026-09-04, MASTER_PROMPT F1→F12 dan tashqari):**
-F10'da "Tez orada" deb belgilangan ikkinchi bo'lim ham endi ishlaydi: 6 ta
-davlat (Rossiya, Xitoy, Yaponiya, Fransiya, Misr, AQSH), jami 74 ta haqiqiy
-xalq topishmog'i bilan.
-- **Manba tekshiruvi:** har bir topishmoq internetdan (ikkita general-purpose
-  agent orqali, parallel) topilgan, aniq manba bilan yozib qo'yilgan, so'ng
-  men mustaqil ravishda 4 ta eng noyob manbani (Littmann 1937, Rolland 1877,
-  1516-yilgi yapon «Gonaraiin gyosen nazo» to'plami, Chyet 1988) WebSearch
-  orqali qayta tekshirib, barchasi haqiqiy ekanini tasdiqladim. Yaponiya
-  bo'yicha ochiq eslatma: faqat 1-2 tasi chinakam qadimiy manbali, qolgani —
-  hozirgi yapon bolalar bog'chalarida keng qo'llaniladigan, bir nechta
-  mustaqil ta'lim saytida tasdiqlangan zamonaviy xalq topishmoqlari (tarjimaga
-  chidamaydigan an'anaviy tovush-o'yiniga asoslangan topishmoqlar ataylab
-  olinmadi). Misr bo'yicha: yagona ishonchli ilmiy manbada (Littmann) atigi
-  8 ta oilaviy mos topishmoq bor edi — 10 taga to'ldirish uchun ishonchsiz
-  manbalardan foydalanish o'rniga, foydalanuvchi bilan kelishilgan holda
-  8 tasi bilan qoldirildi (keyinchalik yangi manba topilsa to'ldiriladi).
-- **O'yin mexanikasi (foydalanuvchi talabiga ko'ra):** 1-urinish oddiy;
-  1-xato → javob necha harf bo'lsa, shuncha bo'sh katakcha ko'rsatiladi;
-  2-xato → birinchi harf ochiladi; 3-xato → oxirgi harf ham ochiladi;
-  4-xato → to'liq javob avtomatik ko'rsatiladi. Bundan tashqari, loyihaning
-  doimiy qoidasiga ko'ra, "👁️ Javobni ko'rsat" tugmasi urinish sonidan
-  qat'iy nazar har doim mavjud va hech qachon bloklanmaydi.
-- **Sovg'a tizimi:** MASTER_PROMPT'ning "Coin/tanga tizimi qo'shilmaydi"
-  qat'iy qoidasi bilan to'qnashmasligi uchun (foydalanuvchi bilan
-  AskUserQuestion orqali kelishib olindi) — cheksiz to'planadigan tanga
-  o'rniga, har bir davlatning FAQAT ilk chindan (oshkor qilinmagan) to'g'ri
-  javobida o'sha davlatga xos bitta noyob "sayohat albomi" suveniri ochiladi
-  (masalan Yaponiya — 🎎, Fransiya — 🗼). Keyingi to'g'ri javoblar takroriy
-  sovg'a bermaydi. `lib/sovinir.ts` orqali localStorage'da saqlanadi.
-- **Xarita ko'rinishi:** MASTER_PROMPT "interaktiv xarita" deb tasvirlagan
-  edi, lekin haqiqiy siyosiy xarita mobil ekranda barmoq bilan aniq bosib
-  bo'lmaydi (kichik davlatlar juda mayda chiqadi) — shuning uchun bayroq+nom
-  bilan, qit'alar bo'yicha guruhlangan karta-grid tanlandi (dizayn qarori).
-- **Xavfsizlik:** `lib/dunyo.ts` (javoblar bilan) faqat server tomonda
-  ishlaydi — build qilingandan keyin klient JS bundle'ida hech qanday javob
-  yo'qligi qo'lda tekshirildi (grep orqali).
-- Playwright orqali to'liq oqim tekshirildi: davlat tanlash, 4 bosqichli
-  maslahat progressiyasi, suvenir birinchi marta ochilishi va ikkinchi marta
-  takrorlanmasligi (localStorage orqali sahifalar aro saqlangani bilan), va
-  375/768/1440px'da responsivlik — konsolida xato yo'q.
+**Qo'shimcha funksiya — F14: Hikmat yo'li (2026-09-04, MASTER_PROMPT F1→F12 dan tashqari):**
+F10'da "Tez orada" deb belgilangan ikkinchi bo'lim — "Jumboqlar xaritasi" —
+avval dunyo xaritasi + 6 davlat + suvenir tizimi sifatida to'liq qurilib,
+sinovdan o'tkazilgan edi (birinchi versiya). Loyiha egasi buni ko'rib,
+konsepsiyani **butunlay yoqtirmadi** va aniq yangi talab bilan qayta
+qurishni so'radi ("jumboqlar xaritasi menga yoqmadi butunlay ozgartiramiz").
+Shu sabab birinchi versiyaning barcha fayllari (`data/dunyo-topishmoqlari.json`,
+`lib/dunyo.ts`, `lib/sovinir.ts`, `lib/bayroq.ts`, `app/api/dunyo/**`,
+`components/SovinirYigindisi.tsx`, `components/SovinirBelgisi.tsx`) o'chirildi
+va o'rniga **"Hikmat yo'li"** — tarixiy-adabiy sayohat xaritasi — qurildi.
+- **Kontent manbai:** yangi tashqi kontent yo'q — bu qaror ataylab qilindi,
+  chunki loyiha egasi topishmoqlarning "170 ta bazadan" kelishini aniq
+  so'radi. Xuddi shu tasdiqlangan F2 korpusi (`data/topishmoqlar.json`,
+  170 ta) ishlatiladi, mavjud `/api/topishmoq/tasodifiy`,
+  `/api/javob-tekshir`, `/api/topishmoq/javob` endpoint'lari orqali (xuddi
+  AI-buvi rejimidagi kabi) — shuning uchun yangi manba/aniqlik xavfi yo'q.
+- **Sayohat mexanikasi:** `lib/sayohat.ts` — localStorage'da
+  `{bosqich, seriya}` saqlanadi. Har 3 ta CHINDAN (oshkor qilinmagan) to'g'ri
+  topilgan javobda "seriya" nolga tushadi va "bosqich" bittaga oshadi —
+  sayohatchi (🐫 belgisi) xaritada keyingi tarixiy bekatga siljiydi.
+  "👁️ Javobni ko'rsat" orqali ko'rilgan javob seriyaga QO'SHILMAYDI (bu
+  Playwright orqali 3 marta ketma-ket tekshirilib, seriya 0/3'da qolgani
+  tasdiqlandi). Noto'g'ri javobda faqat oddiy qayta urinish beriladi — hech
+  qanday jazolash yoki bosqichma-bosqich maslahat yo'q (bu ataylab AI-buvi
+  rejimidan soddalashtirilgan, e'tiborni sayohat va xaritaga qaratish uchun).
+- **Bekatlar:** `lib/manzillar.ts` — 8 ta haqiqiy o'zbek tarixiy-madaniy
+  shahri (Toshkent → Samarqand → Buxoro → Xiva → Qo'qon → Marg'ilon →
+  Termiz → Shahrisabz), har biriga 1-2 gaplik haqiqiy tarixiy-madaniy
+  tavsif bilan — bu "adabiy-tarixiy xarita" talabiga mos, MASTER_PROMPT
+  doirasidagi o'zbek madaniyati mavzusiga ham to'g'ri keladi.
+- **Xarita ko'rinishi:** `components/SayohatXaritasi.tsx` — parxament
+  uslubidagi fon, burama SVG yo'l chizig'i, kompas belgisi, hali
+  yetilmagan bekatlar sirli "?" bilan (keyingi manzil oldindan oshkor
+  bo'lmasligi uchun), yetib borilgan bekatlar haqiqiy ikonka+nom bilan,
+  joriy bekatda CSS `transition` bilan yumshoq siljiydigan 🐫 belgisi va
+  yangi bekatga yetganda oltin rangli `animate-ping` porlash effekti.
+  Xarita `/xarita` sahifasida **alohida oyna (modal)** sifatida ochiladi —
+  yangi bekatga yetilganda avtomatik, yoki istalgan vaqtda "🗺️ Xaritani
+  ko'rish" tugmasi bilan qo'lda (loyiha egasining aniq talabiga mos).
+- Playwright orqali to'liq oqim tekshirildi: 3 ta ketma-ket to'g'ri javobdan
+  keyin xarita modali avtomatik ochilishi va yangi bekat nomi/tavsifini
+  to'g'ri ko'rsatishi, noto'g'ri javobdan keyin oddiy qayta urinish
+  ishlashi, "javobni ko'rsat" seriyaga ta'sir qilmasligi, "Xaritani ko'rish"
+  tugmasi istalgan vaqtda ishlashi, va 375/768/1440px'da responsivlik —
+  konsolida xato yo'q.
 - Bu ham F1→F12 (100 ball) rejasidan tashqari, alohida so'ralgan qo'shimcha
   ish — yakuniy ball hisobiga ta'sir qilmaydi.
 
